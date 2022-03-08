@@ -1,0 +1,62 @@
+﻿<Window x:Class="CalendarSolution.PatientDataBase"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CalendarSolution"
+        mc:Ignorable="d"
+        Title="Patient Data Base" Height="595" Width="1000">
+    <Grid>
+
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+
+
+
+
+        <Label Name="patientLabel" Margin="2" VerticalContentAlignment="Center">_Patient Name:</Label>
+
+
+        <Button Content="Open Vital Form" Grid.Row="1" Margin="2, 40, 0, 0" Click="OpenVital" ></Button>
+        <Button Content="Open Medical History Form" Grid.Row="2" Margin="2,40,0,0" Click="OpenHist"></Button>
+        <Button Content="Open Demographics Form" Grid.Row="3" Margin="2,40,0,0" Click="OpenDemo"></Button>
+        <Button Content="Open Immunizations Form" Grid.Row="4" Margin="2,40,0,0" Click="OpenImmune"></Button>
+        <Button Content="Open Urinalysis Form" Grid.Row="5" Margin="2,40,0,0" Click="OpenUrinalysis"></Button>
+        <Button Content="Open Lab Form" Grid.Row="6" Margin="2,40,0,0" Click="OpenLab"></Button>
+        <Button Content="Open Progress Form" Grid.Row="7" Margin="2,40,0,0" Click="Progress"></Button>
+
+        <Button Content="Upload New Image" Grid.Row="8" Margin="2,30,0,10" Click="UploadImage"></Button>
+        <Button Content="Open Saved Image" Grid.Row="9" Margin="2,0,0,0" Click="OpenImage"></Button>
+        <ComboBox ItemsSource="{Binding cbItems}" SelectedItem="{Binding SelectedcbItem}" Grid.Row="8" Height="20" Margin="162, 40,-135,1"/>
+        <Label Margin="100, 0, 0, 0" Width="Auto" Content="{Binding PatientName}" VerticalContentAlignment="Center"/>
+
+        <Frame Name="frame1" Grid.Row="0" Grid.Column="1" Width="800" Height="450" Grid.RowSpan="8" BorderThickness="2" BorderBrush="Black" Margin="5" VerticalContentAlignment="Center"/>
+
+        <Canvas Name="graphCanvas" Grid.Column="1" Grid.Row="8" Height="60">
+            <Button Content="Vitals Graph" Canvas.Left="250" Canvas.Top="40" Width="150" Click="OpenGraph"/>
+            <ComboBox ItemsSource="{Binding vitalCB}" SelectedItem="{Binding selectedVital}" Height="20" Canvas.Left="425" Canvas.Top="40" Width="150"/>
+            <Button Content="Show Patient Information" Canvas.Left="650" Canvas.Top="40" Width="150" Click="genFile"/>
+        </Canvas>
+
+
+    </Grid>
+
+
+
+</Window>

@@ -1,0 +1,45 @@
+﻿<Window x:Class="CalendarSolution.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CalendarSolution"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel>
+            <Viewbox>
+                <Calendar x:Name="MyCalendar" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+                    <Calendar.CalendarDayButtonStyle>
+                        <Style TargetType="CalendarDayButton">
+                            <Style.Triggers>
+                                <DataTrigger Binding="{Binding Date}" Value="12/25/2020">
+                                </DataTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Calendar.CalendarDayButtonStyle>
+                </Calendar>
+            </Viewbox>
+        </StackPanel>
+        <StackPanel Grid.Column = "1" Width="200">
+            <Label x:Name="textValue" Margin="2" Height="Auto" Content="_Enter Patient Name:"/>
+            <TextBox x:Name="nameText" Margin="2, 0, 0, 30" Height="26.5" VerticalContentAlignment="Center"
+                     Text="{Binding Name, Mode=TwoWay}"/>
+            <Button Content="_Open Patient Form" Click="NewDatabase" Margin="2, 15"/>
+
+        </StackPanel>
+    </Grid>
+</Window>

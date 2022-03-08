@@ -1,0 +1,378 @@
+{
+  "homepages": [],
+  "source_base_path": "C:/Users/Natem/Downloads/Health-Project-master/Health-Project-master",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html",
+          "hash": "JINyMNU0XXT5ufYiWGkntHTvo2KxPdoFnhhS01brccU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/intro.html",
+          "hash": "2l9c8VqpRA7ul2LBY393iapSkPS7RFe/RvZKDdHbEt4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "articles/toc.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/toc.html",
+          "hash": "BlPxk5mtl2kgfcZUgkEguqiSAR/EUyUTT4EdebwkQvs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "gKBeUFOGGET60ML24CEQ+HA+YSRtqWaDBYSc8m9V7+M="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/CalendarSolution.App.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CalendarSolution.App.html",
+          "hash": "O6TywxALuUfa/oN8TGeJjznxSH8IESJhIT5j9knCZpk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/CalendarSolution.Demograpic.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CalendarSolution.Demograpic.html",
+          "hash": "d407GmspUephqjxA8SPe0/XaEzWZqQU4QOa1HKvYfAs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/CalendarSolution.FullPatientFile.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CalendarSolution.FullPatientFile.html",
+          "hash": "Bp8YInvkwtH4SFLcOEOlrSk8YDdRAm6Op6H+LzdErAg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/CalendarSolution.Hospital.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CalendarSolution.Hospital.html",
+          "hash": "91brqghHQcR2QVZxBhCTifE4BhSShGCiqwnydCqZYQQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/CalendarSolution.ImageUpload.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CalendarSolution.ImageUpload.html",
+          "hash": "YAbH0UX/mL5pNLBIEdlBJgZVctm+P7a3iypmdif+Pkc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/CalendarSolution.Imaging.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CalendarSolution.Imaging.html",
+          "hash": "BGC7ZvZIg8v716B7e4Wt3dq63JjNf62ruChUUu3fPcA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/CalendarSolution.Immune.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CalendarSolution.Immune.html",
+          "hash": "RtCVKVo5msFufeQ1tHD05moN/G1OXVjfEksDqrzVShI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/CalendarSolution.LabResults.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CalendarSolution.LabResults.html",
+          "hash": "LTxDOmaXfgAySVL/RaERmGBMSQTUiciqp3ps6kaLdnA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/CalendarSolution.LineManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CalendarSolution.LineManager.html",
+          "hash": "bQO98NPdaKhA0DaBQiPbDgd5bIJAWtJzG3UzEjIFfo4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/CalendarSolution.LogVital.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CalendarSolution.LogVital.html",
+          "hash": "RsSgaaauTgBhr72athcwUOW0fZDut1jyq0OS+0DUMDM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/CalendarSolution.Login.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CalendarSolution.Login.html",
+          "hash": "5mnkBFzEgIjwDjF20ECapjFK0Ia1gG4bf15YoVfjF6w="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/CalendarSolution.MainWindow.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CalendarSolution.MainWindow.html",
+          "hash": "/fx1+09fvUXNgPPCtzShOZ99jCs5lQ7vAlSUnTajFu8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/CalendarSolution.PatientAll.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CalendarSolution.PatientAll.html",
+          "hash": "T8wpOdorCZ4AKFPEv3znMJgpw3cZDcWUsUR5VzgJARU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/CalendarSolution.PatientDataBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CalendarSolution.PatientDataBase.html",
+          "hash": "0eWWqds58gJ+lhuraT7AHfPCNJ1Pf7T7nhY6J1KuqhI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/CalendarSolution.Progress.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CalendarSolution.Progress.html",
+          "hash": "LGruNNs1qcmvyBzAR/lFXHY/vZ6zhn8kxVH4FeVYX8M="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/CalendarSolution.Urinalysis.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CalendarSolution.Urinalysis.html",
+          "hash": "spTBZ5oxQ83lLeIO/B5/7zuozkkbbP9FEhCq9UCdjyU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/CalendarSolution.UserCreate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CalendarSolution.UserCreate.html",
+          "hash": "HYHfcSTl0u10QhrEUdVPU1a+7OVga8dzQ4i84maX/kA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/CalendarSolution.VitalsPage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CalendarSolution.VitalsPage.html",
+          "hash": "L7pWlosi+EkaqBU62Zo8XIyCJzYEY7vkHloFtEs5Clk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/CalendarSolution.graphVital.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CalendarSolution.graphVital.html",
+          "hash": "kO6vqfav6+YkfqMnSASs9N2CElbZpMresX+tlO7fjUM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/CalendarSolution.medHistory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CalendarSolution.medHistory.html",
+          "hash": "oM1pw7p9UgDfe3gEHugo/kqv4gEl++OX7gmpL0Rmy34="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/CalendarSolution.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CalendarSolution.html",
+          "hash": "wue4nSwa+jQ6OvfplgyZzjYRppAkrRlO/z0sCztqdJY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "obj/api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "Wdt/GXUKcpXAdZJi6wjMxN2Udg4MzBcn5wRYhrGILrA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "Oa9PuD4E1hvZnCkVjUgzNBX6S00Zo5YilamTERTZo54="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": true,
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 3,
+          "skipped_file_count": 0
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 21,
+          "skipped_file_count": 1
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": true,
+        "details": "Can support incremental post processing.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

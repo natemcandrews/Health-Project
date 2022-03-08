@@ -1,0 +1,39 @@
+﻿<Page x:Class="CalendarSolution.Progress"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+      xmlns:local="clr-namespace:CalendarSolution"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Progress">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        
+        
+        
+        
+        <Canvas Grid.ColumnSpan="2" Background="White">
+            <Label x:Name="Clock"  Canvas.Left="20" Canvas.Top="20"/>
+            <Label Content="{Binding CurrentDate, Mode=TwoWay}" Canvas.Left="170" Canvas.Top="20"/>
+            <Label Content="{Binding Name, Mode=TwoWay}" Canvas.Left="320" Canvas.Top="20"/>
+            <Label Content="Notes:" Canvas.Left="380" Canvas.Top="20"/>
+            <TextBox x:Name="Note"  Canvas.Left="425" Canvas.Top="24" Width="250"
+                     TextWrapping="Wrap" MinWidth="15" MinHeight="20" MaxWidth="500" MaxHeight="50" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <Button Content="Add Note" Canvas.Left="695" Canvas.Top="23" Click="AddNote"/>
+        </Canvas>
+
+        <Canvas Grid.RowSpan="2" Grid.ColumnSpan="2" Margin="20, 60, 20, 20" Name="ProgressList"/>
+    </Grid>
+</Page>
