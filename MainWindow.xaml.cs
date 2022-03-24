@@ -103,3 +103,10 @@ namespace CalendarSolution
         }
     }
 }
+
+
+
+//Check the saving for Images like test results
+//-1 for temperature
+//Seeing past records for a patient
+//Appointment Scheduler

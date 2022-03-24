@@ -1517,6 +1517,19 @@ references:
   isSpec: "True"
   fullName: CalendarSolution.Progress.AddNote
   nameWithType: Progress.AddNote
+- uid: CalendarSolution.Progress.deleteNote(System.Object,System.EventArgs)
+  name: deleteNote(Object, EventArgs)
+  href: api/CalendarSolution.Progress.html#CalendarSolution_Progress_deleteNote_System_Object_System_EventArgs_
+  commentId: M:CalendarSolution.Progress.deleteNote(System.Object,System.EventArgs)
+  fullName: CalendarSolution.Progress.deleteNote(System.Object, System.EventArgs)
+  nameWithType: Progress.deleteNote(Object, EventArgs)
+- uid: CalendarSolution.Progress.deleteNote*
+  name: deleteNote
+  href: api/CalendarSolution.Progress.html#CalendarSolution_Progress_deleteNote_
+  commentId: Overload:CalendarSolution.Progress.deleteNote
+  isSpec: "True"
+  fullName: CalendarSolution.Progress.deleteNote
+  nameWithType: Progress.deleteNote
 - uid: CalendarSolution.Progress.loadNotes
   name: loadNotes()
   href: api/CalendarSolution.Progress.html#CalendarSolution_Progress_loadNotes
