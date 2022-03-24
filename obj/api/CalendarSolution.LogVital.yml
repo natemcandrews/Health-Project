@@ -1,0 +1,565 @@
+### YamlMime:ManagedReference
+items:
+- uid: CalendarSolution.LogVital
+  commentId: T:CalendarSolution.LogVital
+  id: LogVital
+  parent: CalendarSolution
+  children:
+  - CalendarSolution.LogVital.BP
+  - CalendarSolution.LogVital.Pulse
+  - CalendarSolution.LogVital.PulseOx
+  - CalendarSolution.LogVital.Respirations
+  - CalendarSolution.LogVital.Temp
+  - CalendarSolution.LogVital.TimeofLog
+  langs:
+  - csharp
+  - vb
+  name: LogVital
+  nameWithType: LogVital
+  fullName: CalendarSolution.LogVital
+  type: Class
+  source:
+    id: LogVital
+    path: C:\Users\Natem\source\repos\Health-Project-master\LogVital.cs
+    startLine: 8
+  assemblies:
+  - CalendarSolution
+  namespace: CalendarSolution
+  syntax:
+    content: public class LogVital
+    content.vb: Public Class LogVital
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: CalendarSolution.LogVital.Temp
+  commentId: P:CalendarSolution.LogVital.Temp
+  id: Temp
+  parent: CalendarSolution.LogVital
+  langs:
+  - csharp
+  - vb
+  name: Temp
+  nameWithType: LogVital.Temp
+  fullName: CalendarSolution.LogVital.Temp
+  type: Property
+  source:
+    id: Temp
+    path: C:\Users\Natem\source\repos\Health-Project-master\LogVital.cs
+    startLine: 12
+  assemblies:
+  - CalendarSolution
+  namespace: CalendarSolution
+  syntax:
+    content: public double Temp { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property Temp As Double
+  overload: CalendarSolution.LogVital.Temp*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: CalendarSolution.LogVital.Pulse
+  commentId: P:CalendarSolution.LogVital.Pulse
+  id: Pulse
+  parent: CalendarSolution.LogVital
+  langs:
+  - csharp
+  - vb
+  name: Pulse
+  nameWithType: LogVital.Pulse
+  fullName: CalendarSolution.LogVital.Pulse
+  type: Property
+  source:
+    id: Pulse
+    path: C:\Users\Natem\source\repos\Health-Project-master\LogVital.cs
+    startLine: 20
+  assemblies:
+  - CalendarSolution
+  namespace: CalendarSolution
+  syntax:
+    content: public string Pulse { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Pulse As String
+  overload: CalendarSolution.LogVital.Pulse*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: CalendarSolution.LogVital.Respirations
+  commentId: P:CalendarSolution.LogVital.Respirations
+  id: Respirations
+  parent: CalendarSolution.LogVital
+  langs:
+  - csharp
+  - vb
+  name: Respirations
+  nameWithType: LogVital.Respirations
+  fullName: CalendarSolution.LogVital.Respirations
+  type: Property
+  source:
+    id: Respirations
+    path: C:\Users\Natem\source\repos\Health-Project-master\LogVital.cs
+    startLine: 28
+  assemblies:
+  - CalendarSolution
+  namespace: CalendarSolution
+  syntax:
+    content: public string Respirations { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Respirations As String
+  overload: CalendarSolution.LogVital.Respirations*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: CalendarSolution.LogVital.BP
+  commentId: P:CalendarSolution.LogVital.BP
+  id: BP
+  parent: CalendarSolution.LogVital
+  langs:
+  - csharp
+  - vb
+  name: BP
+  nameWithType: LogVital.BP
+  fullName: CalendarSolution.LogVital.BP
+  type: Property
+  source:
+    id: BP
+    path: C:\Users\Natem\source\repos\Health-Project-master\LogVital.cs
+    startLine: 36
+  assemblies:
+  - CalendarSolution
+  namespace: CalendarSolution
+  syntax:
+    content: public string BP { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property BP As String
+  overload: CalendarSolution.LogVital.BP*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: CalendarSolution.LogVital.PulseOx
+  commentId: P:CalendarSolution.LogVital.PulseOx
+  id: PulseOx
+  parent: CalendarSolution.LogVital
+  langs:
+  - csharp
+  - vb
+  name: PulseOx
+  nameWithType: LogVital.PulseOx
+  fullName: CalendarSolution.LogVital.PulseOx
+  type: Property
+  source:
+    id: PulseOx
+    path: C:\Users\Natem\source\repos\Health-Project-master\LogVital.cs
+    startLine: 44
+  assemblies:
+  - CalendarSolution
+  namespace: CalendarSolution
+  syntax:
+    content: public string PulseOx { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property PulseOx As String
+  overload: CalendarSolution.LogVital.PulseOx*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: CalendarSolution.LogVital.TimeofLog
+  commentId: F:CalendarSolution.LogVital.TimeofLog
+  id: TimeofLog
+  parent: CalendarSolution.LogVital
+  langs:
+  - csharp
+  - vb
+  name: TimeofLog
+  nameWithType: LogVital.TimeofLog
+  fullName: CalendarSolution.LogVital.TimeofLog
+  type: Field
+  source:
+    id: TimeofLog
+    path: C:\Users\Natem\source\repos\Health-Project-master\LogVital.cs
+    startLine: 50
+  assemblies:
+  - CalendarSolution
+  namespace: CalendarSolution
+  syntax:
+    content: public string TimeofLog
+    return:
+      type: System.String
+    content.vb: Public TimeofLog As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: CalendarSolution
+  commentId: N:CalendarSolution
+  name: CalendarSolution
+  nameWithType: CalendarSolution
+  fullName: CalendarSolution
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: CalendarSolution.LogVital.Temp*
+  commentId: Overload:CalendarSolution.LogVital.Temp
+  name: Temp
+  nameWithType: LogVital.Temp
+  fullName: CalendarSolution.LogVital.Temp
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  name: Double
+  nameWithType: Double
+  fullName: System.Double
+- uid: CalendarSolution.LogVital.Pulse*
+  commentId: Overload:CalendarSolution.LogVital.Pulse
+  name: Pulse
+  nameWithType: LogVital.Pulse
+  fullName: CalendarSolution.LogVital.Pulse
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: CalendarSolution.LogVital.Respirations*
+  commentId: Overload:CalendarSolution.LogVital.Respirations
+  name: Respirations
+  nameWithType: LogVital.Respirations
+  fullName: CalendarSolution.LogVital.Respirations
+- uid: CalendarSolution.LogVital.BP*
+  commentId: Overload:CalendarSolution.LogVital.BP
+  name: BP
+  nameWithType: LogVital.BP
+  fullName: CalendarSolution.LogVital.BP
+- uid: CalendarSolution.LogVital.PulseOx*
+  commentId: Overload:CalendarSolution.LogVital.PulseOx
+  name: PulseOx
+  nameWithType: LogVital.PulseOx
+  fullName: CalendarSolution.LogVital.PulseOx
