@@ -19,10 +19,6 @@ namespace CalendarSolution
     {
         string Patient; //Stores the patients name in a string
         List<List<string>> PatientNotes = new List<List<string>>();
-
-        List<Object> RowObjects = new List<Object>();
-        Dictionary<Button, List<Object>> RowList = new Dictionary<Button, List<Object>>();
-
         System.Windows.Threading.DispatcherTimer Timer = new System.Windows.Threading.DispatcherTimer();
 
         /// <summary>
@@ -75,37 +71,12 @@ namespace CalendarSolution
                     Canvas.SetTop(newLabel, verticalSpacing);
                     Canvas.SetLeft(newLabel, spacingArray[spacingIndex]); //Check spacing
                     spacingIndex++;
-                    RowObjects.Add(newLabel);
                 }
-                Button remove = new Button() { Content = "Remove", };
-                remove.Click += new RoutedEventHandler(deleteNote);
-
-                ProgressList.Children.Add(remove);
-                RowObjects.Add(remove);
-
-                Canvas.SetTop(remove, verticalSpacing);
-                Canvas.SetLeft(remove, 300);
-
-                RowList.Add(remove, RowObjects);
                 verticalSpacing += 20;
             }
         }
 
         
-        protected void deleteNote(object sender, EventArgs e)
-        {
-            ProgressList.Children.Remove((UIElement)sender);
-            foreach(List<Object> noteRow in RowList[(Button)sender])
-            {
-                foreach (Object text in noteRow)
-                {
-                    ProgressList.Children.Remove((UIElement)text); //Check if remove works
-                }
-            }
-            
-        }
-
-
         /// <summary>
         /// Connects to a label to display current time
         /// </summary>
