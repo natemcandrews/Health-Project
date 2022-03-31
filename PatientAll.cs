@@ -174,8 +174,8 @@ namespace CalendarSolution
             set { ageValue = value; }
         }
 
-        private double tempValue;
-        public double Temp
+        private string tempValue;
+        public string Temp
         {
             get { return tempValue; }
             set { tempValue = value; }
