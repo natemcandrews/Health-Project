@@ -225,10 +225,10 @@
       "output": {
         ".html": {
           "relative_path": "api/CalendarSolution.Progress.html",
-          "hash": "Bfw1q/vX17fCBsk5U3C7Xxzpa6PKw8Zl0sesLLvydvM="
+          "hash": "LGruNNs1qcmvyBzAR/lFXHY/vZ6zhn8kxVH4FeVYX8M="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -300,7 +300,7 @@
           "hash": "wue4nSwa+jQ6OvfplgyZzjYRppAkrRlO/z0sCztqdJY="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -347,7 +347,7 @@
           "can_incremental": true,
           "incrementalPhase": "build",
           "total_file_count": 21,
-          "skipped_file_count": 21
+          "skipped_file_count": 20
         },
         "TocDocumentProcessor": {
           "can_incremental": false,
