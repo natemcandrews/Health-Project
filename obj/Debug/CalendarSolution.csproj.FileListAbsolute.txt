@@ -1157,4 +1157,7 @@ C:\Users\Natem\source\repos\Health-Project-master\obj\Debug\CalendarSolution.csp
 C:\Users\Natem\source\repos\Health-Project-master\obj\Debug\CalendarSolution.csproj.CopyComplete
 C:\Users\Natem\source\repos\Health-Project-master\obj\Debug\CalendarSolution.exe
 C:\Users\Natem\source\repos\Health-Project-master\obj\Debug\CalendarSolution.pdb
+C:\Users\Natem\source\repos\Health-Project-master\bin\Debug\AppointmentSchedule.dll
+C:\Users\Natem\source\repos\Health-Project-master\bin\Debug\Properties.Resources.Designer.cs.dll
+C:\Users\Natem\source\repos\Health-Project-master\bin\Debug\AppointmentSchedule.pdb
 C:\Users\Natem\source\repos\Health-Project-master\obj\Debug\CalendarSolution.csproj.AssemblyReference.cache

@@ -234,19 +234,6 @@ references:
   isSpec: "True"
   fullName: CalendarSolution.Imaging.Imaging
   nameWithType: Imaging.Imaging
-- uid: CalendarSolution.Imaging.btnSave_Click(System.Object,System.Windows.RoutedEventArgs)
-  name: btnSave_Click(Object, RoutedEventArgs)
-  href: api/CalendarSolution.Imaging.html#CalendarSolution_Imaging_btnSave_Click_System_Object_System_Windows_RoutedEventArgs_
-  commentId: M:CalendarSolution.Imaging.btnSave_Click(System.Object,System.Windows.RoutedEventArgs)
-  fullName: CalendarSolution.Imaging.btnSave_Click(System.Object, System.Windows.RoutedEventArgs)
-  nameWithType: Imaging.btnSave_Click(Object, RoutedEventArgs)
-- uid: CalendarSolution.Imaging.btnSave_Click*
-  name: btnSave_Click
-  href: api/CalendarSolution.Imaging.html#CalendarSolution_Imaging_btnSave_Click_
-  commentId: Overload:CalendarSolution.Imaging.btnSave_Click
-  isSpec: "True"
-  fullName: CalendarSolution.Imaging.btnSave_Click
-  nameWithType: Imaging.btnSave_Click
 - uid: CalendarSolution.Imaging.cbItems
   name: cbItems
   href: api/CalendarSolution.Imaging.html#CalendarSolution_Imaging_cbItems
@@ -538,6 +525,19 @@ references:
   isSpec: "True"
   fullName: CalendarSolution.PatientAll.A1C
   nameWithType: PatientAll.A1C
+- uid: CalendarSolution.PatientAll.Address
+  name: Address
+  href: api/CalendarSolution.PatientAll.html#CalendarSolution_PatientAll_Address
+  commentId: P:CalendarSolution.PatientAll.Address
+  fullName: CalendarSolution.PatientAll.Address
+  nameWithType: PatientAll.Address
+- uid: CalendarSolution.PatientAll.Address*
+  name: Address
+  href: api/CalendarSolution.PatientAll.html#CalendarSolution_PatientAll_Address_
+  commentId: Overload:CalendarSolution.PatientAll.Address
+  isSpec: "True"
+  fullName: CalendarSolution.PatientAll.Address
+  nameWithType: PatientAll.Address
 - uid: CalendarSolution.PatientAll.Age
   name: Age
   href: api/CalendarSolution.PatientAll.html#CalendarSolution_PatientAll_Age
@@ -947,6 +947,19 @@ references:
   isSpec: "True"
   fullName: CalendarSolution.PatientAll.PH
   nameWithType: PatientAll.PH
+- uid: CalendarSolution.PatientAll.Phone
+  name: Phone
+  href: api/CalendarSolution.PatientAll.html#CalendarSolution_PatientAll_Phone
+  commentId: P:CalendarSolution.PatientAll.Phone
+  fullName: CalendarSolution.PatientAll.Phone
+  nameWithType: PatientAll.Phone
+- uid: CalendarSolution.PatientAll.Phone*
+  name: Phone
+  href: api/CalendarSolution.PatientAll.html#CalendarSolution_PatientAll_Phone_
+  commentId: Overload:CalendarSolution.PatientAll.Phone
+  isSpec: "True"
+  fullName: CalendarSolution.PatientAll.Phone
+  nameWithType: PatientAll.Phone
 - uid: CalendarSolution.PatientAll.Platelets
   name: Platelets
   href: api/CalendarSolution.PatientAll.html#CalendarSolution_PatientAll_Platelets

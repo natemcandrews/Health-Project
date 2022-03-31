@@ -22,16 +22,6 @@
 
         <StackPanel>
             <Viewbox>
-                <Calendar x:Name="MyCalendar" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
-                    <Calendar.CalendarDayButtonStyle>
-                        <Style TargetType="CalendarDayButton">
-                            <Style.Triggers>
-                                <DataTrigger Binding="{Binding Date}" Value="12/25/2020">
-                                </DataTrigger>
-                            </Style.Triggers>
-                        </Style>
-                    </Calendar.CalendarDayButtonStyle>
-                </Calendar>
             </Viewbox>
         </StackPanel>
         <StackPanel Grid.Column = "1" Width="200">

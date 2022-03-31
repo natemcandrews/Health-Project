@@ -69,16 +69,10 @@ namespace CalendarSolution
             PatientName = patientname;
             cbItems = cbitem;
             path = Path;
-            if (File.Exists(path + "/" + patientname + "/Images/" + descname + ".jpg") && File.Exists("C:/Patient Forms/" + Username + "/" + patientname + "/Images/Names/" + descname + ".json")) //Checks if the patient data already exists
+            if (File.Exists(path + "/" + patientname + "/Images/" + descname + ".jpg")) //Checks if the patient data already exists
             {
                 try
                 {
-                    XmlSerializer serializer = new XmlSerializer(image.GetType()); //Serializes data
-                    StreamReader reader = File.OpenText(path + "/" + patientname + "/Images/Names/" + descname + ".json");
-                    this.DataContext = serializer.Deserialize(reader);
-                    image = (ImageUpload)this.DataContext;
-                    reader.Close();
-
                     Uri resourceUri = new Uri(path + "/" + patientname + "/Images/" + descname + ".jpg");
                     imgPhoto.Source = new BitmapImage(resourceUri);
                 }
@@ -97,41 +91,38 @@ namespace CalendarSolution
         /// </summary>
         /// <param name="sender"> Default parameter for Buttons</param>
         /// <param name="e"> Default parameter for Buttons</param>
-        protected void btnSave_Click(object sender, RoutedEventArgs e)
-        {
-            XmlSerializer serializer = new XmlSerializer(image.GetType());
-            StreamWriter writer = File.CreateText(path + "/" + PatientName + "/Images/Names/" + image.Title + ".json"); //Copies the image description to the storage folder
-            serializer.Serialize(writer.BaseStream, this.DataContext);
-            writer.Close();
+        
 
-            DirectoryInfo di = new DirectoryInfo(path + "/" + PatientName + "/Images/Names");
-            FileInfo[] files = di.GetFiles();
+        //protected void btnSave_Click(object sender, RoutedEventArgs e)
+        //{
+        //    DirectoryInfo di = new DirectoryInfo(path + "/" + PatientName + "/Images/Names");
+        //    FileInfo[] files = di.GetFiles();
 
-
-            addCombo(true);
-            
-
-        }
+        //}
 
         /// <summary>
         /// Add option to list of images
         /// If the image already exists, it will not be added
         /// </summary>
-        /// <param name="add"></param>
-        private void addCombo(bool add)
+        private void addCombo()
         {
+            bool add = true;
+            
             foreach (ComboBoxItem combo in cbItems) //Loops through each combobo item
             {
                 if (combo.Content.Equals(image.Title)) //Checks if another item already exists
-                {
+                { //Fix TITLE   
                     add = false;
                 }
             }
 
-            if (add) //Adds new item
-            {
-                cbItems.Add(new ComboBoxItem { Content = image.Title, HorizontalContentAlignment = 0, VerticalContentAlignment = 0 });
-            }
+            if(!string.IsNullOrEmpty(image.Title) && add) 
+            { 
+                    cbItems.Add(new ComboBoxItem { Content = image.Title, HorizontalContentAlignment = 0, VerticalContentAlignment = 0 });
+            } else MessageBox.Show("Please enter a title for the image before selecting");
+
+
+
         }
 
         /// <summary>
@@ -161,9 +152,7 @@ namespace CalendarSolution
                 File.Delete(path + "/Images/Names/" + image.Title + ".json");
             }
 
-            StreamWriter writer = File.CreateText(path + "/" + PatientName + "/Images/Names/" + image.Title + ".json"); //Copies the image description to the storage folder
-            serializer.Serialize(writer.BaseStream, this.DataContext);
-            writer.Close();
+            addCombo();
         }
     }
 }

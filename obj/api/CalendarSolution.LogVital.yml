@@ -63,11 +63,11 @@ items:
   - CalendarSolution
   namespace: CalendarSolution
   syntax:
-    content: public double Temp { get; set; }
+    content: public string Temp { get; set; }
     parameters: []
     return:
-      type: System.Double
-    content.vb: Public Property Temp As Double
+      type: System.String
+    content.vb: Public Property Temp As String
   overload: CalendarSolution.LogVital.Temp*
   modifiers.csharp:
   - public
@@ -529,18 +529,6 @@ references:
   name: Temp
   nameWithType: LogVital.Temp
   fullName: CalendarSolution.LogVital.Temp
-- uid: System.Double
-  commentId: T:System.Double
-  parent: System
-  isExternal: true
-  name: Double
-  nameWithType: Double
-  fullName: System.Double
-- uid: CalendarSolution.LogVital.Pulse*
-  commentId: Overload:CalendarSolution.LogVital.Pulse
-  name: Pulse
-  nameWithType: LogVital.Pulse
-  fullName: CalendarSolution.LogVital.Pulse
 - uid: System.String
   commentId: T:System.String
   parent: System
@@ -548,6 +536,11 @@ references:
   name: String
   nameWithType: String
   fullName: System.String
+- uid: CalendarSolution.LogVital.Pulse*
+  commentId: Overload:CalendarSolution.LogVital.Pulse
+  name: Pulse
+  nameWithType: LogVital.Pulse
+  fullName: CalendarSolution.LogVital.Pulse
 - uid: CalendarSolution.LogVital.Respirations*
   commentId: Overload:CalendarSolution.LogVital.Respirations
   name: Respirations

@@ -79,8 +79,8 @@ namespace CalendarSolution
 
                         }
                         try {
-                            if (vitalData.Temp > 0) {
-                                pointData.Add(new KeyValuePair<string, double>(vitalData.TimeofLog, vitalData.Temp)); 
+                            if (Double.Parse(vitalData.Temp)  > 0) {
+                                pointData.Add(new KeyValuePair<string, double>(vitalData.TimeofLog, Double.Parse(vitalData.Temp))); 
                             } //Plots temperature
                          }
                         catch (System.FormatException) //Checks for incorrectly entered temperatures

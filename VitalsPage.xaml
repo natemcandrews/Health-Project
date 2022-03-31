@@ -6,7 +6,7 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:CalendarSolution"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="350" d:DesignWidth="600"
       Title="VitalsPage">
 
     <Grid>
@@ -36,14 +36,7 @@
 
         <Label Name="nameLabel" Margin="2" Grid.Row="1" Grid.Column="0">_Name:</Label>
         <TextBox Name = "nameText" Width="150" Margin="2,2,2,2"
-                 Text="{Binding Name, Mode=TwoWay}" TextWrapping="Wrap" Grid.Row="1" Grid.Column="1"/>
-
-        <Label Name="dobLabel" Margin="2" Grid.Row="1" Grid.Column="2">_Patient DOB:</Label>
-        <DatePicker Text="{Binding DOB, Mode=TwoWay}" Margin="2" Grid.Row="1" Grid.Column="3"/>
-
-        <Label Name="ageLabel" Margin="2" Grid.Row="1" Grid.Column="4">_Patient Age:</Label>
-        <TextBox Name="ageText" Width="150" Margin="2,2,2,2"
-                 Text="{Binding Age, Mode=TwoWay}" TextWrapping="Wrap" Grid.Row="1" Grid.Column="5"/>
+                 Text="{Binding Name, Mode=TwoWay}" TextWrapping="Wrap" Grid.Row="1" Grid.Column="1" TextChanged="nameText_TextChanged"/>
 
 
 
@@ -55,9 +48,9 @@
         <TextBox Name="pulseText" Width="150" Margin="2,2,2,2"
                  Text="{Binding Pulse, Mode=TwoWay}" TextWrapping="Wrap" Grid.Row="3" Grid.Column="3"/>
 
-        <Label Name="respLabel" Margin="2" Grid.Row="3" Grid.Column="4">_Respirations:</Label>
+        <Label Name="respLabel" Margin="2" Grid.Row="1" Grid.Column="2">_Respirations:</Label>
         <TextBox Name="respText" Width="150" Margin="2,2,2,2"
-                 Text="{Binding Respirations, Mode=TwoWay}" TextWrapping="Wrap" Grid.Row="3" Grid.Column="5"/>
+                 Text="{Binding Respirations, Mode=TwoWay}" TextWrapping="Wrap" Grid.Row="1" Grid.Column="3"/>
 
 
         <Label Name="bpLabel" Margin="2" Grid.Row="5" Grid.Column="0">_Blood Pressure:</Label>
@@ -80,15 +73,8 @@
 
 
 
-        <Label Name="docLabel" Margin="2" Grid.Row="9" Grid.Column="0">_Doctor's Name:</Label>
-        <TextBox Name="docText" Width="150" Margin="2,2,2,2"
-                 Text="{Binding Doc, Mode=TwoWay}" TextWrapping="Wrap" Grid.Row="9" Grid.Column="1"/>
 
-        <Label Name="dateLabel" Margin="2" Grid.Row="9" Grid.Column="2">_Appointment Date:</Label>
-        <DatePicker Text="{Binding Date, Mode=TwoWay}" Margin="2" Grid.Row="9" Grid.Column="3"/>
 
-        <Label Name="timeLabel" Margin="2" Grid.Row="9" Grid.Column="4">_Appointment Time:</Label>
-        <xctk:TimePicker Text="{Binding Time, Mode=TwoWay}" Margin="2" Grid.Row="9" Grid.Column="5"/>
 
         <StackPanel Grid.Row = "10" Grid.Column = "0">
             <Button Content = "_Log Vitals" Click="Button_Click" Margin="2,40,-57,-0"/>
