@@ -8,6 +8,7 @@ items:
   - CalendarSolution.Imaging.#ctor
   - CalendarSolution.Imaging.#ctor(System.String,System.String,System.Collections.ObjectModel.ObservableCollection{System.Windows.Controls.ComboBoxItem},System.String)
   - CalendarSolution.Imaging.#ctor(System.String,System.String,System.String,System.Collections.ObjectModel.ObservableCollection{System.Windows.Controls.ComboBoxItem},System.String)
+  - CalendarSolution.Imaging.btnSave_Click(System.Object,System.Windows.RoutedEventArgs)
   - CalendarSolution.Imaging.cbItems
   langs:
   - csharp
@@ -792,6 +793,41 @@ items:
   - Public
   fullName.vb: CalendarSolution.Imaging.Imaging(System.String, System.String, System.String, System.Collections.ObjectModel.ObservableCollection(Of System.Windows.Controls.ComboBoxItem), System.String)
   name.vb: Imaging(String, String, String, ObservableCollection(Of ComboBoxItem), String)
+- uid: CalendarSolution.Imaging.btnSave_Click(System.Object,System.Windows.RoutedEventArgs)
+  commentId: M:CalendarSolution.Imaging.btnSave_Click(System.Object,System.Windows.RoutedEventArgs)
+  id: btnSave_Click(System.Object,System.Windows.RoutedEventArgs)
+  parent: CalendarSolution.Imaging
+  langs:
+  - csharp
+  - vb
+  name: btnSave_Click(Object, RoutedEventArgs)
+  nameWithType: Imaging.btnSave_Click(Object, RoutedEventArgs)
+  fullName: CalendarSolution.Imaging.btnSave_Click(System.Object, System.Windows.RoutedEventArgs)
+  type: Method
+  source:
+    id: btnSave_Click
+    path: C:\Users\Natem\source\repos\Health-Project-master\Imaging.xaml.cs
+    startLine: 99
+  assemblies:
+  - CalendarSolution
+  namespace: CalendarSolution
+  summary: "\nSaves the image and description to the files\n"
+  example: []
+  syntax:
+    content: protected void btnSave_Click(object sender, RoutedEventArgs e)
+    parameters:
+    - id: sender
+      type: System.Object
+      description: Default parameter for Buttons
+    - id: e
+      type: System.Windows.RoutedEventArgs
+      description: Default parameter for Buttons
+    content.vb: Protected Sub btnSave_Click(sender As Object, e As RoutedEventArgs)
+  overload: CalendarSolution.Imaging.btnSave_Click*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
 references:
 - uid: CalendarSolution
   commentId: N:CalendarSolution
@@ -12254,3 +12290,15 @@ references:
   name: String
   nameWithType: String
   fullName: System.String
+- uid: CalendarSolution.Imaging.btnSave_Click*
+  commentId: Overload:CalendarSolution.Imaging.btnSave_Click
+  name: btnSave_Click
+  nameWithType: Imaging.btnSave_Click
+  fullName: CalendarSolution.Imaging.btnSave_Click
+- uid: System.Windows.RoutedEventArgs
+  commentId: T:System.Windows.RoutedEventArgs
+  parent: System.Windows
+  isExternal: true
+  name: RoutedEventArgs
+  nameWithType: RoutedEventArgs
+  fullName: System.Windows.RoutedEventArgs

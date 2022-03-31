@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.IO;
 using System.Text.Json;
 using System.Windows;
@@ -18,7 +17,7 @@ namespace CalendarSolution
          * dir = Patient name for file finding,
          */
         string Username;
-        PatientAll PatientData = new PatientAll();
+        PatientAll PatientData = new PatientAll() { Temp = -1};
         string path;
 
         /// <summary>
@@ -41,12 +40,51 @@ namespace CalendarSolution
             Username = username;
             this.DataContext = PatientData;
             path = Path;
-            getAppointments();
+            ColorDates();
         }
 
 
-        void getAppointments()
+        /// <summary>
+        /// Colors in the calndar item for the dates that the patients have been registered under
+        /// </summary>
+        void ColorDates() //Will be used to keep track of patient appointment dates
         {
+            string PatientFiles = path;
+
+            Dictionary<string, Color> dates = new Dictionary<string, Color>();
+
+            try
+            {
+                foreach (string PatientFile in Directory.GetDirectories(PatientFiles))
+                {
+                    string PatientFileName = PatientFile.Replace(PatientFiles, "");
+                    PatientFileName = PatientFileName.Substring(1);
+                    XmlSerializer serializer = new XmlSerializer(PatientData.GetType()); //Serializes data if it exists
+                    string patPath = path + "/" + PatientFileName + "/PatientData/" + PatientFileName + "_Data.json";
+                    StreamReader reader = File.OpenText(patPath);
+                    PatientAll myPat = (PatientAll)serializer.Deserialize(reader);
+                    reader.Close();
+                    dates.Add(myPat.Date, Color.FromArgb(255, 255, 0, 0));
+                }
+            }
+
+            catch (IOException) { }
+
+
+            Style style = new Style(typeof(CalendarDayButton));
+
+            foreach (KeyValuePair<string, Color> item in dates) //Loops through the dates for each appointment
+            {
+                DataTrigger trigger = new DataTrigger()
+                {
+                    Value = item.Key,
+                    Binding = new Binding("Date")
+                };
+                trigger.Setters.Add(new Setter(Control.BackgroundProperty, new SolidColorBrush(item.Value)));
+                style.Triggers.Add(trigger);
+            }
+            MyCalendar.CalendarDayButtonStyle = style;
+
         }
 
         /// <summary>
@@ -69,5 +107,6 @@ namespace CalendarSolution
 
 
 //Check the saving for Images like test results
+//-1 for temperature
 //Seeing past records for a patient
 //Appointment Scheduler

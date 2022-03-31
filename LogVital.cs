@@ -9,8 +9,8 @@ namespace CalendarSolution
     public class LogVital
     {
 
-        private string tempValue;
-        public string Temp
+        private double tempValue;
+        public double Temp
         {
             get { return tempValue; }
             set { tempValue = value; }

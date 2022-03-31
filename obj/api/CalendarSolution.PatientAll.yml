@@ -6,7 +6,6 @@ items:
   parent: CalendarSolution
   children:
   - CalendarSolution.PatientAll.A1C
-  - CalendarSolution.PatientAll.Address
   - CalendarSolution.PatientAll.Age
   - CalendarSolution.PatientAll.Allergy
   - CalendarSolution.PatientAll.Appointment
@@ -39,7 +38,6 @@ items:
   - CalendarSolution.PatientAll.Occupation
   - CalendarSolution.PatientAll.PatientNotes
   - CalendarSolution.PatientAll.PH
-  - CalendarSolution.PatientAll.Phone
   - CalendarSolution.PatientAll.Platelets
   - CalendarSolution.PatientAll.Pregnancy
   - CalendarSolution.PatientAll.PreviousVisit
@@ -795,11 +793,11 @@ items:
   - CalendarSolution
   namespace: CalendarSolution
   syntax:
-    content: public string Temp { get; set; }
+    content: public double Temp { get; set; }
     parameters: []
     return:
-      type: System.String
-    content.vb: Public Property Temp As String
+      type: System.Double
+    content.vb: Public Property Temp As Double
   overload: CalendarSolution.PatientAll.Temp*
   modifiers.csharp:
   - public
@@ -1737,68 +1735,6 @@ items:
   - set
   modifiers.vb:
   - Public
-- uid: CalendarSolution.PatientAll.Phone
-  commentId: P:CalendarSolution.PatientAll.Phone
-  id: Phone
-  parent: CalendarSolution.PatientAll
-  langs:
-  - csharp
-  - vb
-  name: Phone
-  nameWithType: PatientAll.Phone
-  fullName: CalendarSolution.PatientAll.Phone
-  type: Property
-  source:
-    id: Phone
-    path: C:\Users\Natem\source\repos\Health-Project-master\PatientAll.cs
-    startLine: 397
-  assemblies:
-  - CalendarSolution
-  namespace: CalendarSolution
-  syntax:
-    content: public string Phone { get; set; }
-    parameters: []
-    return:
-      type: System.String
-    content.vb: Public Property Phone As String
-  overload: CalendarSolution.PatientAll.Phone*
-  modifiers.csharp:
-  - public
-  - get
-  - set
-  modifiers.vb:
-  - Public
-- uid: CalendarSolution.PatientAll.Address
-  commentId: P:CalendarSolution.PatientAll.Address
-  id: Address
-  parent: CalendarSolution.PatientAll
-  langs:
-  - csharp
-  - vb
-  name: Address
-  nameWithType: PatientAll.Address
-  fullName: CalendarSolution.PatientAll.Address
-  type: Property
-  source:
-    id: Address
-    path: C:\Users\Natem\source\repos\Health-Project-master\PatientAll.cs
-    startLine: 398
-  assemblies:
-  - CalendarSolution
-  namespace: CalendarSolution
-  syntax:
-    content: public string Address { get; set; }
-    parameters: []
-    return:
-      type: System.String
-    content.vb: Public Property Address As String
-  overload: CalendarSolution.PatientAll.Address*
-  modifiers.csharp:
-  - public
-  - get
-  - set
-  modifiers.vb:
-  - Public
 - uid: CalendarSolution.PatientAll.PatientNotes
   commentId: F:CalendarSolution.PatientAll.PatientNotes
   id: PatientNotes
@@ -1813,7 +1749,7 @@ items:
   source:
     id: PatientNotes
     path: C:\Users\Natem\source\repos\Health-Project-master\PatientAll.cs
-    startLine: 400
+    startLine: 398
   assemblies:
   - CalendarSolution
   namespace: CalendarSolution
@@ -2253,6 +2189,13 @@ references:
   name: Temp
   nameWithType: PatientAll.Temp
   fullName: CalendarSolution.PatientAll.Temp
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  name: Double
+  nameWithType: Double
+  fullName: System.Double
 - uid: CalendarSolution.PatientAll.Pulse*
   commentId: Overload:CalendarSolution.PatientAll.Pulse
   name: Pulse
@@ -2403,16 +2346,6 @@ references:
   name: CurrentTime
   nameWithType: PatientAll.CurrentTime
   fullName: CalendarSolution.PatientAll.CurrentTime
-- uid: CalendarSolution.PatientAll.Phone*
-  commentId: Overload:CalendarSolution.PatientAll.Phone
-  name: Phone
-  nameWithType: PatientAll.Phone
-  fullName: CalendarSolution.PatientAll.Phone
-- uid: CalendarSolution.PatientAll.Address*
-  commentId: Overload:CalendarSolution.PatientAll.Address
-  name: Address
-  nameWithType: PatientAll.Address
-  fullName: CalendarSolution.PatientAll.Address
 - uid: System.Collections.Generic.List{System.Collections.Generic.List{System.String}}
   commentId: T:System.Collections.Generic.List{System.Collections.Generic.List{System.String}}
   parent: System.Collections.Generic

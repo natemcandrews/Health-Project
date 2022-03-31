@@ -30,9 +30,12 @@
         <Button Height="23" HorizontalAlignment="Left"
         Margin="12,0,0,118.5" x:Name="btnLoad" VerticalAlignment="Bottom"
         Width="75" Grid.Column="1" Click="btnLoad_Click" Content="_Upload"/>
-        <!--<Button Height="23" HorizontalAlignment="Left"
+        <Button Height="23" HorizontalAlignment="Left"
         Margin="325,0,0,118.5" x:Name="btnSave" VerticalAlignment="Bottom"
-        Width="75" Grid.Column="1" Click="btnSave_Click" Content="_Save"/>-->
+        Width="75" Grid.Column="1" Click="btnSave_Click" Content="_Save"/>
+        <Label Grid.Column="1" Margin="135,320,400,100" Width="150" Height="30" Content="_Image Description:" />
+        <TextBox Grid.Column="1" Margin="10.5,357,10,25" Text="{Binding Description, Mode=TwoWay}"/>
+
 
     </Grid>
 </Page>

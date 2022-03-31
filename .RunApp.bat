@@ -1,1 +1,1 @@
-start %CD%\bin\Debug\CalendarSolution.exe
+start C:\Users\Natem\source\repos\Health-Project-master\bin\Debug\CalendarSolution.exe

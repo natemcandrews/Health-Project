@@ -174,8 +174,8 @@ namespace CalendarSolution
             set { ageValue = value; }
         }
 
-        private string tempValue;
-        public string Temp
+        private double tempValue;
+        public double Temp
         {
             get { return tempValue; }
             set { tempValue = value; }
@@ -395,8 +395,6 @@ namespace CalendarSolution
             set { currentTimeValue = value; }
         }
 
-        public string Phone { get; set;}
-        public string Address { get; set; }
 
         public List<List<string>> PatientNotes = new List<List<string>>();
     }
