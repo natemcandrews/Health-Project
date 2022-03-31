@@ -36,5 +36,6 @@ namespace CalendarSolution
             InitializeComponent();
             this.DataContext = fullData;//Creates new form for patient if there is no data
         }
+
     }
 }

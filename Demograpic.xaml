@@ -20,6 +20,9 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="25"/>
             <RowDefinition Height="Auto"/>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="25"/>
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
@@ -32,32 +35,52 @@
             <ColumnDefinition Width="Auto"/>
         </Grid.ColumnDefinitions>
 
-        <Label Name="Address">_Date of last Appointment:</Label>
-        <DatePicker Text= "{Binding Date, Mode = Twoway}" Grid.Column="1" Margin="2" Width="Auto"
-                    MinWidth="15" MinHeight="20" MaxWidth="500" MaxHeight="50" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Label Name="Name">Patient Name:</Label>
+        <TextBox Text= "{Binding Name, Mode = Twoway}" Grid.Column="1" Margin="2" Width="150"
+                    MinWidth="15" MinHeight="20" MaxWidth="500" MaxHeight="50" HorizontalAlignment="Left" VerticalAlignment="Top" TextChanged="TextBox_TextChanged"/>
 
-        <Label Name="EmergencyName" Grid.Column="2">_Emergency Contact Name:</Label>
-        <TextBox Text= "{Binding EmergencyName, Mode = Twoway}" TextWrapping="Wrap" Grid.Column="3" Width="150" Height="75" Margin="2"
+        <Label Name="PatientAge" Grid.Column="2">Patient Age:</Label>
+        <TextBox Text= "{Binding Age, Mode = Twoway}" TextWrapping="Wrap" Grid.Column="3" Width="150"  Margin="2"
                  MinWidth="15" MinHeight="20" MaxWidth="500" MaxHeight="50" HorizontalAlignment="Left" VerticalAlignment="Top"/>
 
         <Label Name="EmergencyNum" Grid.Row="4" Grid.Column="0">_Emergency Contact Number:</Label>
-        <TextBox Text= "{Binding EmergencyNumber, Mode = Twoway}" TextWrapping="Wrap" Grid.Row="4" Grid.Column="1" Width="150" Height="75" Margin="2"
+        <TextBox Text= "{Binding EmergencyNumber, Mode = Twoway}" TextWrapping="Wrap" Grid.Row="4" Grid.Column="1" Width="150"  Margin="2"
                  MinWidth="15" MinHeight="20" MaxWidth="500" MaxHeight="50" HorizontalAlignment="Left" VerticalAlignment="Top"/>
 
 
 
         <Label Name="InsuranceCompany" Grid.Row="2">_Insurance Company:</Label>
-        <TextBox Text= "{Binding Company, Mode = Twoway}" TextWrapping="Wrap" Grid.Column="1" Grid.Row="2" Width="150" Height="75" Margin="2"
+        <TextBox Text= "{Binding Company, Mode = Twoway}" TextWrapping="Wrap" Grid.Column="1" Grid.Row="2" Width="150"  Margin="2"
                  MinWidth="15" MinHeight="20" MaxWidth="500" MaxHeight="50" HorizontalAlignment="Left" VerticalAlignment="Top"/>
 
         <Label Name="InsuranceNumber" Grid.Row="2" Grid.Column="2">_Insurance Policy Number:</Label>
-        <TextBox Text= "{Binding Number, Mode = Twoway}" TextWrapping="Wrap" Grid.Row="2" Grid.Column="3" Width="150" Height="75" Margin="2"
+        <TextBox Text= "{Binding Number, Mode = Twoway}" TextWrapping="Wrap" Grid.Row="2" Grid.Column="3" Width="150" Margin="2"
                  MinWidth="15" MinHeight="20" MaxWidth="500" MaxHeight="50" HorizontalAlignment="Left" VerticalAlignment="Top"/>
 
         <Label Name="GroupNumber" Grid.Row="4" Grid.Column="2">_Insurance Group Number:</Label>
-        <TextBox Text= "{Binding Group, Mode = Twoway}" TextWrapping="Wrap" Grid.Row="4" Grid.Column="3" Width="150" Height="75" Margin="2"
+        <TextBox Text= "{Binding Group, Mode = Twoway}" TextWrapping="Wrap" Grid.Row="4" Grid.Column="3" Width="150" Margin="2"
                  MinWidth="15" MinHeight="20" MaxWidth="500" MaxHeight="50" HorizontalAlignment="Left" VerticalAlignment="Top"/>
 
+        <Label Name="dobLabel" Margin="2" Grid.Row="6" Grid.Column="0">_Patient DOB:</Label>
+        <DatePicker Text= "{Binding DOB, Mode = Twoway}" Grid.Row="6" Grid.Column="1" Width="150" Margin="2"
+                 MinWidth="15" MinHeight="20" MaxWidth="500" MaxHeight="50" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+
+        <Label Name="ageLabel" Margin="2" Grid.Row="6" Grid.Column="2">Emergency Contact Name:</Label>
+        <TextBox Text= "{Binding EmergencyName, Mode = Twoway}" Grid.Row="6" Grid.Column="3" Width="150" Margin="2"
+                 MinWidth="15" MinHeight="20" MaxWidth="500" MaxHeight="50" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+
+
+        <Label Name="docLabel" Margin="2" Grid.Row="8" Grid.Column="0">_Doctor's Name:</Label>
+        <TextBox Text= "{Binding Doc, Mode = Twoway}" Grid.Row="8" Grid.Column="1" Width="150" Margin="2"
+                 MinWidth="15" MinHeight="20" MaxWidth="500" MaxHeight="50" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+
+        <Label Name="timeLabel" Margin="2" Grid.Row="8" Grid.Column="2">_Appointment Time:</Label>
+        <TextBox Text= "{Binding Time, Mode = Twoway}" Grid.Row="8" Grid.Column="3" Width="150" Margin="2"
+                 MinWidth="15" MinHeight="20" MaxWidth="500" MaxHeight="50" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+
+        <Label Name="DateLabel" Margin="2" Grid.Row="10" Grid.Column="0">Current Date:</Label>
+        <DatePicker Text= "{Binding Date, Mode = Twoway}" Grid.Row="10" Grid.Column="1" Width="150" Margin="2"
+                 MinWidth="15" MinHeight="20" MaxWidth="500" MaxHeight="50" HorizontalAlignment="Left" VerticalAlignment="Top"/>
 
 
 
