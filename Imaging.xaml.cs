@@ -58,10 +58,10 @@ namespace CalendarSolution
         /// </summary>
         /// <param name="patientname"> The patients name </param>
         /// <param name="username"> The users name </param>
-        /// <param name="descname"> The name of the Image to be displayed </param>
+        /// <param name="title"> The name of the Image to be displayed </param>
         /// <param name="cbitem"> The users name </param>
         /// <param name="Path"> path to patient files </param>
-        public Imaging(string patientname, string username, string descname, ObservableCollection<ComboBoxItem> cbitem, string Path)
+        public Imaging(string patientname, string username, string title, ObservableCollection<ComboBoxItem> cbitem, string Path)
         {
             InitializeComponent();
             this.DataContext = image;
@@ -69,17 +69,11 @@ namespace CalendarSolution
             PatientName = patientname;
             cbItems = cbitem;
             path = Path;
-            if (File.Exists(path + "/" + patientname + "/Images/" + descname + ".jpg") && File.Exists("C:/Patient Forms/" + Username + "/" + patientname + "/Images/Names/" + descname + ".json")) //Checks if the patient data already exists
+            if (File.Exists($"{path}/{patientname}/Images/{title}.jpg")) //Checks if the patient data already exists
             {
                 try
                 {
-                    XmlSerializer serializer = new XmlSerializer(image.GetType()); //Serializes data
-                    StreamReader reader = File.OpenText(path + "/" + patientname + "/Images/Names/" + descname + ".json");
-                    this.DataContext = serializer.Deserialize(reader);
-                    image = (ImageUpload)this.DataContext;
-                    reader.Close();
-
-                    Uri resourceUri = new Uri(path + "/" + patientname + "/Images/" + descname + ".jpg");
+                    Uri resourceUri = new Uri($"{path}/{patientname}/Images/{title}.jpg");
                     imgPhoto.Source = new BitmapImage(resourceUri);
                 }
                 catch(IOException e) //Checks for issues with displaying the image
@@ -122,7 +116,7 @@ namespace CalendarSolution
         {
             foreach (ComboBoxItem combo in cbItems) //Loops through each combobo item
             {
-                if (combo.Content.Equals(image.Title)) //Checks if another item already exists
+                if (combo.Content.Equals(image.Title) && !string.IsNullOrEmpty(combo.Content.ToString())) //Checks if another item already exists
                 {
                     add = false;
                 }
@@ -155,15 +149,6 @@ namespace CalendarSolution
                 imgPhoto.Source = new BitmapImage(uri); //Displays the Image
             }
             XmlSerializer serializer = new XmlSerializer(image.GetType());
-
-            if (File.Exists(path + "/Images/Names/" + image.Title + ".json"))
-            {
-                File.Delete(path + "/Images/Names/" + image.Title + ".json");
-            }
-
-            StreamWriter writer = File.CreateText(path + "/" + PatientName + "/Images/Names/" + image.Title + ".json"); //Copies the image description to the storage folder
-            serializer.Serialize(writer.BaseStream, this.DataContext);
-            writer.Close();
         }
     }
 }

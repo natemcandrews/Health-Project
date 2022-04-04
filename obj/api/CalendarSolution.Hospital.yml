@@ -839,11 +839,11 @@ items:
   source:
     id: makeLabel
     path: C:\Users\Natem\source\repos\Health-Project-master\Hospital.xaml.cs
-    startLine: 95
+    startLine: 112
   assemblies:
   - CalendarSolution
   namespace: CalendarSolution
-  summary: "\nCreates the indivifual labels\n"
+  summary: "\nCreates the individual labels\n"
   example: []
   syntax:
     content: protected void makeLabel()

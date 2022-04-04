@@ -444,6 +444,9 @@
     <Compile Include="Progress.xaml.cs">
       <DependentUpon>Progress.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Records.xaml.cs">
+      <DependentUpon>Records.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Urinalysis.xaml.cs">
       <DependentUpon>Urinalysis.xaml</DependentUpon>
     </Compile>
@@ -504,6 +507,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Progress.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Records.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

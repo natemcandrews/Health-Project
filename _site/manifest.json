@@ -93,7 +93,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CalendarSolution.Hospital.html",
-          "hash": "91brqghHQcR2QVZxBhCTifE4BhSShGCiqwnydCqZYQQ="
+          "hash": "uWwAtKNJZaM1mGugTCovLE0qE1luWsF6K5bRwO2uExk="
         }
       },
       "is_incremental": true,
@@ -117,10 +117,10 @@
       "output": {
         ".html": {
           "relative_path": "api/CalendarSolution.Imaging.html",
-          "hash": "BGC7ZvZIg8v716B7e4Wt3dq63JjNf62ruChUUu3fPcA="
+          "hash": "PGbmUT8r0rAJ9e13tjho3DtBOYj6H4976g+Jku/TO6s="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -201,7 +201,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CalendarSolution.PatientAll.html",
-          "hash": "T8wpOdorCZ4AKFPEv3znMJgpw3cZDcWUsUR5VzgJARU="
+          "hash": "sPC+xCyfgsjtYexoDlPV9vxtay3AnWwwaRmSNV12Mks="
         }
       },
       "is_incremental": true,
@@ -228,7 +228,19 @@
           "hash": "LGruNNs1qcmvyBzAR/lFXHY/vZ6zhn8kxVH4FeVYX8M="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/CalendarSolution.Records.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CalendarSolution.Records.html",
+          "hash": "pvyrHFnzURD947eJ3vMhy/nbJrz2j6OGYPU/nTZJm58="
+        }
+      },
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -297,7 +309,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CalendarSolution.html",
-          "hash": "wue4nSwa+jQ6OvfplgyZzjYRppAkrRlO/z0sCztqdJY="
+          "hash": "mdlI2+6sLzkUY1M8x/+C+cSWGHY3yU+6XxuQ72+rx6c="
         }
       },
       "is_incremental": false,
@@ -309,7 +321,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "Wdt/GXUKcpXAdZJi6wjMxN2Udg4MzBcn5wRYhrGILrA="
+          "hash": "x4Ht8RQn1icFU6qTIJi8DGduDhuEywkS/qjtpCJdRBc="
         }
       },
       "is_incremental": false,
@@ -346,8 +358,8 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
-          "total_file_count": 21,
-          "skipped_file_count": 20
+          "total_file_count": 22,
+          "skipped_file_count": 21
         },
         "TocDocumentProcessor": {
           "can_incremental": false,

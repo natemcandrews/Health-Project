@@ -26,7 +26,7 @@
                     <Calendar.CalendarDayButtonStyle>
                         <Style TargetType="CalendarDayButton">
                             <Style.Triggers>
-                                <DataTrigger Binding="{Binding Date}" Value="12/25/2020">
+                                <DataTrigger Binding="{Binding Date, Mode=TwoWay}" Value="12/25/2020">
                                 </DataTrigger>
                             </Style.Triggers>
                         </Style>

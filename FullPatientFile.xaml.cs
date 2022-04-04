@@ -21,7 +21,7 @@ namespace CalendarSolution
     public partial class FullPatientFile : Page
     {
         PatientAll PatientData = new PatientAll(); // Creates an object that stores all the patient data
-        string Username; //Stores the Username of the user, primarily used to access proper storage files
+        string Username;
 
         /// <summary>
         /// Empty Constructor for **FullPatientFile** to add security

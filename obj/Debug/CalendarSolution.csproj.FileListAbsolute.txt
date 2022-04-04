@@ -1158,3 +1158,5 @@ C:\Users\Natem\source\repos\Health-Project-master\obj\Debug\CalendarSolution.csp
 C:\Users\Natem\source\repos\Health-Project-master\obj\Debug\CalendarSolution.exe
 C:\Users\Natem\source\repos\Health-Project-master\obj\Debug\CalendarSolution.pdb
 C:\Users\Natem\source\repos\Health-Project-master\obj\Debug\CalendarSolution.csproj.AssemblyReference.cache
+C:\Users\Natem\source\repos\Health-Project-master\obj\Debug\Records.g.cs
+C:\Users\Natem\source\repos\Health-Project-master\obj\Debug\Records.baml

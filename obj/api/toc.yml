@@ -36,6 +36,8 @@
     name: PatientDataBase
   - uid: CalendarSolution.Progress
     name: Progress
+  - uid: CalendarSolution.Records
+    name: Records
   - uid: CalendarSolution.Urinalysis
     name: Urinalysis
   - uid: CalendarSolution.UserCreate

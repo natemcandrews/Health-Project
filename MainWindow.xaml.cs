@@ -109,3 +109,17 @@ namespace CalendarSolution
 //Check the saving for Images like test results
 //Seeing past records for a patient
 //Appointment Scheduler
+//Add logout button
+//Add toggle Hospital and toggle Clinic button
+//Dynamic Hospital Page
+
+
+/*Patient Record notes
+ * - Records window ******
+ * - Seperate window to display progress form *****
+ * - Add a delete button to the seperate window
+ * - Records window can also show images
+ * - Records can show the vitals 
+ * 
+ * - Essentially a way to access patient attributes, graphs, and images at the same time
+ */

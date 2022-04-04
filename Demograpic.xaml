@@ -37,7 +37,7 @@
 
         <Label Name="Name">Patient Name:</Label>
         <TextBox Text= "{Binding Name, Mode = Twoway}" Grid.Column="1" Margin="2" Width="150"
-                    MinWidth="15" MinHeight="20" MaxWidth="500" MaxHeight="50" HorizontalAlignment="Left" VerticalAlignment="Top" TextChanged="TextBox_TextChanged"/>
+                    MinWidth="15" MinHeight="20" MaxWidth="500" MaxHeight="50" HorizontalAlignment="Left" VerticalAlignment="Top"/>
 
         <Label Name="PatientAge" Grid.Column="2">Patient Age:</Label>
         <TextBox Text= "{Binding Age, Mode = Twoway}" TextWrapping="Wrap" Grid.Column="3" Width="150"  Margin="2"

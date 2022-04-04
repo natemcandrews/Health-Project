@@ -767,7 +767,7 @@ items:
   summary: "\n**Imaging** This constructor is used when the user wants to access a previously created image file \n"
   example: []
   syntax:
-    content: public Imaging(string patientname, string username, string descname, ObservableCollection<ComboBoxItem> cbitem, string Path)
+    content: public Imaging(string patientname, string username, string title, ObservableCollection<ComboBoxItem> cbitem, string Path)
     parameters:
     - id: patientname
       type: System.String
@@ -775,7 +775,7 @@ items:
     - id: username
       type: System.String
       description: 'The users name '
-    - id: descname
+    - id: title
       type: System.String
       description: 'The name of the Image to be displayed '
     - id: cbitem
@@ -784,7 +784,7 @@ items:
     - id: Path
       type: System.String
       description: 'path to patient files '
-    content.vb: Public Sub New(patientname As String, username As String, descname As String, cbitem As ObservableCollection(Of ComboBoxItem), Path As String)
+    content.vb: Public Sub New(patientname As String, username As String, title As String, cbitem As ObservableCollection(Of ComboBoxItem), Path As String)
   overload: CalendarSolution.Imaging.#ctor*
   nameWithType.vb: Imaging.Imaging(String, String, String, ObservableCollection(Of ComboBoxItem), String)
   modifiers.csharp:
@@ -807,7 +807,7 @@ items:
   source:
     id: btnSave_Click
     path: C:\Users\Natem\source\repos\Health-Project-master\Imaging.xaml.cs
-    startLine: 99
+    startLine: 93
   assemblies:
   - CalendarSolution
   namespace: CalendarSolution

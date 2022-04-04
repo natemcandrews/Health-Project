@@ -1,0 +1,25 @@
+﻿<Window x:Class="CalendarSolution.Records"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CalendarSolution"
+        mc:Ignorable="d"
+        Title="Records" Height="500" Width="950">
+    
+    
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="150"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+
+        <Canvas Name="Buttons">
+            <ComboBox ItemsSource="{Binding cbItems}" SelectedItem="{Binding SelectedcbItem}"  Height="20" Margin="10,10,0,0"/>
+        </Canvas>
+
+        <Canvas Name="RecordCanvas" Grid.Column="1">
+            <Frame Name="RecordFrame"></Frame>
+        </Canvas>
+    </Grid>
+</Window>

@@ -69,7 +69,7 @@ items:
   source:
     id: PatientAll
     path: C:\Users\Natem\source\repos\Health-Project-master\PatientAll.cs
-    startLine: 8
+    startLine: 10
   assemblies:
   - CalendarSolution
   namespace: CalendarSolution
@@ -106,7 +106,7 @@ items:
   source:
     id: HIPPA
     path: C:\Users\Natem\source\repos\Health-Project-master\PatientAll.cs
-    startLine: 12
+    startLine: 14
   assemblies:
   - CalendarSolution
   namespace: CalendarSolution
@@ -137,7 +137,7 @@ items:
   source:
     id: EmergencyName
     path: C:\Users\Natem\source\repos\Health-Project-master\PatientAll.cs
-    startLine: 19
+    startLine: 21
   assemblies:
   - CalendarSolution
   namespace: CalendarSolution
@@ -168,7 +168,7 @@ items:
   source:
     id: EmergencyNumber
     path: C:\Users\Natem\source\repos\Health-Project-master\PatientAll.cs
-    startLine: 26
+    startLine: 28
   assemblies:
   - CalendarSolution
   namespace: CalendarSolution
@@ -199,7 +199,7 @@ items:
   source:
     id: Company
     path: C:\Users\Natem\source\repos\Health-Project-master\PatientAll.cs
-    startLine: 33
+    startLine: 35
   assemblies:
   - CalendarSolution
   namespace: CalendarSolution
@@ -230,7 +230,7 @@ items:
   source:
     id: Number
     path: C:\Users\Natem\source\repos\Health-Project-master\PatientAll.cs
-    startLine: 40
+    startLine: 42
   assemblies:
   - CalendarSolution
   namespace: CalendarSolution
@@ -261,7 +261,7 @@ items:
   source:
     id: Group
     path: C:\Users\Natem\source\repos\Health-Project-master\PatientAll.cs
-    startLine: 47
+    startLine: 49
   assemblies:
   - CalendarSolution
   namespace: CalendarSolution
@@ -292,7 +292,7 @@ items:
   source:
     id: Immunity
     path: C:\Users\Natem\source\repos\Health-Project-master\PatientAll.cs
-    startLine: 54
+    startLine: 56
   assemblies:
   - CalendarSolution
   namespace: CalendarSolution
@@ -323,7 +323,7 @@ items:
   source:
     id: Appointment
     path: C:\Users\Natem\source\repos\Health-Project-master\PatientAll.cs
-    startLine: 61
+    startLine: 63
   assemblies:
   - CalendarSolution
   namespace: CalendarSolution
@@ -354,7 +354,7 @@ items:
   source:
     id: Occupation
     path: C:\Users\Natem\source\repos\Health-Project-master\PatientAll.cs
-    startLine: 69
+    startLine: 71
   assemblies:
   - CalendarSolution
   namespace: CalendarSolution
@@ -385,7 +385,7 @@ items:
   source:
     id: VisitReason
     path: C:\Users\Natem\source\repos\Health-Project-master\PatientAll.cs
-    startLine: 77
+    startLine: 79
   assemblies:
   - CalendarSolution
   namespace: CalendarSolution
@@ -416,7 +416,7 @@ items:
   source:
     id: Medication
     path: C:\Users\Natem\source\repos\Health-Project-master\PatientAll.cs
-    startLine: 85
+    startLine: 87
   assemblies:
   - CalendarSolution
   namespace: CalendarSolution
@@ -447,7 +447,7 @@ items:
   source:
     id: Allergy
     path: C:\Users\Natem\source\repos\Health-Project-master\PatientAll.cs
-    startLine: 93
+    startLine: 95
   assemblies:
   - CalendarSolution
   namespace: CalendarSolution
@@ -478,7 +478,7 @@ items:
   source:
     id: Symptom
     path: C:\Users\Natem\source\repos\Health-Project-master\PatientAll.cs
-    startLine: 101
+    startLine: 103
   assemblies:
   - CalendarSolution
   namespace: CalendarSolution
@@ -509,7 +509,7 @@ items:
   source:
     id: PreviousVisit
     path: C:\Users\Natem\source\repos\Health-Project-master\PatientAll.cs
-    startLine: 109
+    startLine: 111
   assemblies:
   - CalendarSolution
   namespace: CalendarSolution
@@ -540,7 +540,7 @@ items:
   source:
     id: History
     path: C:\Users\Natem\source\repos\Health-Project-master\PatientAll.cs
-    startLine: 117
+    startLine: 119
   assemblies:
   - CalendarSolution
   namespace: CalendarSolution
@@ -571,7 +571,7 @@ items:
   source:
     id: Transfusion
     path: C:\Users\Natem\source\repos\Health-Project-master\PatientAll.cs
-    startLine: 125
+    startLine: 127
   assemblies:
   - CalendarSolution
   namespace: CalendarSolution
@@ -602,7 +602,7 @@ items:
   source:
     id: WorkConcerns
     path: C:\Users\Natem\source\repos\Health-Project-master\PatientAll.cs
-    startLine: 133
+    startLine: 135
   assemblies:
   - CalendarSolution
   namespace: CalendarSolution
@@ -633,7 +633,7 @@ items:
   source:
     id: Habits
     path: C:\Users\Natem\source\repos\Health-Project-master\PatientAll.cs
-    startLine: 141
+    startLine: 143
   assemblies:
   - CalendarSolution
   namespace: CalendarSolution
@@ -664,7 +664,7 @@ items:
   source:
     id: Pregnancy
     path: C:\Users\Natem\source\repos\Health-Project-master\PatientAll.cs
-    startLine: 149
+    startLine: 151
   assemblies:
   - CalendarSolution
   namespace: CalendarSolution
@@ -695,7 +695,7 @@ items:
   source:
     id: Name
     path: C:\Users\Natem\source\repos\Health-Project-master\PatientAll.cs
-    startLine: 156
+    startLine: 158
   assemblies:
   - CalendarSolution
   namespace: CalendarSolution
@@ -726,7 +726,7 @@ items:
   source:
     id: DOB
     path: C:\Users\Natem\source\repos\Health-Project-master\PatientAll.cs
-    startLine: 163
+    startLine: 165
   assemblies:
   - CalendarSolution
   namespace: CalendarSolution
@@ -757,7 +757,7 @@ items:
   source:
     id: Age
     path: C:\Users\Natem\source\repos\Health-Project-master\PatientAll.cs
-    startLine: 170
+    startLine: 172
   assemblies:
   - CalendarSolution
   namespace: CalendarSolution
@@ -788,16 +788,16 @@ items:
   source:
     id: Temp
     path: C:\Users\Natem\source\repos\Health-Project-master\PatientAll.cs
-    startLine: 177
+    startLine: 179
   assemblies:
   - CalendarSolution
   namespace: CalendarSolution
   syntax:
-    content: public double Temp { get; set; }
+    content: public string Temp { get; set; }
     parameters: []
     return:
-      type: System.Double
-    content.vb: Public Property Temp As Double
+      type: System.String
+    content.vb: Public Property Temp As String
   overload: CalendarSolution.PatientAll.Temp*
   modifiers.csharp:
   - public
@@ -819,7 +819,7 @@ items:
   source:
     id: Pulse
     path: C:\Users\Natem\source\repos\Health-Project-master\PatientAll.cs
-    startLine: 184
+    startLine: 186
   assemblies:
   - CalendarSolution
   namespace: CalendarSolution
@@ -850,7 +850,7 @@ items:
   source:
     id: Respirations
     path: C:\Users\Natem\source\repos\Health-Project-master\PatientAll.cs
-    startLine: 191
+    startLine: 193
   assemblies:
   - CalendarSolution
   namespace: CalendarSolution
@@ -881,7 +881,7 @@ items:
   source:
     id: BP
     path: C:\Users\Natem\source\repos\Health-Project-master\PatientAll.cs
-    startLine: 198
+    startLine: 200
   assemblies:
   - CalendarSolution
   namespace: CalendarSolution
@@ -912,7 +912,7 @@ items:
   source:
     id: PulseOx
     path: C:\Users\Natem\source\repos\Health-Project-master\PatientAll.cs
-    startLine: 205
+    startLine: 207
   assemblies:
   - CalendarSolution
   namespace: CalendarSolution
@@ -943,7 +943,7 @@ items:
   source:
     id: Height
     path: C:\Users\Natem\source\repos\Health-Project-master\PatientAll.cs
-    startLine: 212
+    startLine: 214
   assemblies:
   - CalendarSolution
   namespace: CalendarSolution
@@ -974,7 +974,7 @@ items:
   source:
     id: Weight
     path: C:\Users\Natem\source\repos\Health-Project-master\PatientAll.cs
-    startLine: 219
+    startLine: 221
   assemblies:
   - CalendarSolution
   namespace: CalendarSolution
@@ -1005,7 +1005,7 @@ items:
   source:
     id: Doc
     path: C:\Users\Natem\source\repos\Health-Project-master\PatientAll.cs
-    startLine: 226
+    startLine: 228
   assemblies:
   - CalendarSolution
   namespace: CalendarSolution
@@ -1036,7 +1036,7 @@ items:
   source:
     id: Date
     path: C:\Users\Natem\source\repos\Health-Project-master\PatientAll.cs
-    startLine: 234
+    startLine: 236
   assemblies:
   - CalendarSolution
   namespace: CalendarSolution
@@ -1067,7 +1067,7 @@ items:
   source:
     id: Time
     path: C:\Users\Natem\source\repos\Health-Project-master\PatientAll.cs
-    startLine: 241
+    startLine: 243
   assemblies:
   - CalendarSolution
   namespace: CalendarSolution
@@ -1098,7 +1098,7 @@ items:
   source:
     id: UrineColor
     path: C:\Users\Natem\source\repos\Health-Project-master\PatientAll.cs
-    startLine: 248
+    startLine: 250
   assemblies:
   - CalendarSolution
   namespace: CalendarSolution
@@ -1129,7 +1129,7 @@ items:
   source:
     id: UrineTemp
     path: C:\Users\Natem\source\repos\Health-Project-master\PatientAll.cs
-    startLine: 255
+    startLine: 257
   assemblies:
   - CalendarSolution
   namespace: CalendarSolution
@@ -1160,7 +1160,7 @@ items:
   source:
     id: PH
     path: C:\Users\Natem\source\repos\Health-Project-master\PatientAll.cs
-    startLine: 262
+    startLine: 264
   assemblies:
   - CalendarSolution
   namespace: CalendarSolution
@@ -1191,7 +1191,7 @@ items:
   source:
     id: Glucose
     path: C:\Users\Natem\source\repos\Health-Project-master\PatientAll.cs
-    startLine: 269
+    startLine: 271
   assemblies:
   - CalendarSolution
   namespace: CalendarSolution
@@ -1222,7 +1222,7 @@ items:
   source:
     id: BloodPresence
     path: C:\Users\Natem\source\repos\Health-Project-master\PatientAll.cs
-    startLine: 276
+    startLine: 278
   assemblies:
   - CalendarSolution
   namespace: CalendarSolution
@@ -1253,7 +1253,7 @@ items:
   source:
     id: Protein
     path: C:\Users\Natem\source\repos\Health-Project-master\PatientAll.cs
-    startLine: 283
+    startLine: 285
   assemblies:
   - CalendarSolution
   namespace: CalendarSolution
@@ -1284,7 +1284,7 @@ items:
   source:
     id: Leukocytes
     path: C:\Users\Natem\source\repos\Health-Project-master\PatientAll.cs
-    startLine: 290
+    startLine: 292
   assemblies:
   - CalendarSolution
   namespace: CalendarSolution
@@ -1315,7 +1315,7 @@ items:
   source:
     id: UrineTime
     path: C:\Users\Natem\source\repos\Health-Project-master\PatientAll.cs
-    startLine: 297
+    startLine: 299
   assemblies:
   - CalendarSolution
   namespace: CalendarSolution
@@ -1346,7 +1346,7 @@ items:
   source:
     id: UrineDate
     path: C:\Users\Natem\source\repos\Health-Project-master\PatientAll.cs
-    startLine: 304
+    startLine: 306
   assemblies:
   - CalendarSolution
   namespace: CalendarSolution
@@ -1377,7 +1377,7 @@ items:
   source:
     id: CBC
     path: C:\Users\Natem\source\repos\Health-Project-master\PatientAll.cs
-    startLine: 311
+    startLine: 313
   assemblies:
   - CalendarSolution
   namespace: CalendarSolution
@@ -1408,7 +1408,7 @@ items:
   source:
     id: WBC
     path: C:\Users\Natem\source\repos\Health-Project-master\PatientAll.cs
-    startLine: 318
+    startLine: 320
   assemblies:
   - CalendarSolution
   namespace: CalendarSolution
@@ -1439,7 +1439,7 @@ items:
   source:
     id: RBC
     path: C:\Users\Natem\source\repos\Health-Project-master\PatientAll.cs
-    startLine: 325
+    startLine: 327
   assemblies:
   - CalendarSolution
   namespace: CalendarSolution
@@ -1470,7 +1470,7 @@ items:
   source:
     id: LabTime
     path: C:\Users\Natem\source\repos\Health-Project-master\PatientAll.cs
-    startLine: 332
+    startLine: 334
   assemblies:
   - CalendarSolution
   namespace: CalendarSolution
@@ -1501,7 +1501,7 @@ items:
   source:
     id: PTT
     path: C:\Users\Natem\source\repos\Health-Project-master\PatientAll.cs
-    startLine: 339
+    startLine: 341
   assemblies:
   - CalendarSolution
   namespace: CalendarSolution
@@ -1532,7 +1532,7 @@ items:
   source:
     id: Hemoglobin
     path: C:\Users\Natem\source\repos\Health-Project-master\PatientAll.cs
-    startLine: 346
+    startLine: 348
   assemblies:
   - CalendarSolution
   namespace: CalendarSolution
@@ -1563,7 +1563,7 @@ items:
   source:
     id: Hematocrit
     path: C:\Users\Natem\source\repos\Health-Project-master\PatientAll.cs
-    startLine: 353
+    startLine: 355
   assemblies:
   - CalendarSolution
   namespace: CalendarSolution
@@ -1594,7 +1594,7 @@ items:
   source:
     id: LabDate
     path: C:\Users\Natem\source\repos\Health-Project-master\PatientAll.cs
-    startLine: 360
+    startLine: 362
   assemblies:
   - CalendarSolution
   namespace: CalendarSolution
@@ -1625,7 +1625,7 @@ items:
   source:
     id: Platelets
     path: C:\Users\Natem\source\repos\Health-Project-master\PatientAll.cs
-    startLine: 367
+    startLine: 369
   assemblies:
   - CalendarSolution
   namespace: CalendarSolution
@@ -1656,7 +1656,7 @@ items:
   source:
     id: A1C
     path: C:\Users\Natem\source\repos\Health-Project-master\PatientAll.cs
-    startLine: 374
+    startLine: 376
   assemblies:
   - CalendarSolution
   namespace: CalendarSolution
@@ -1687,7 +1687,7 @@ items:
   source:
     id: CurrentDate
     path: C:\Users\Natem\source\repos\Health-Project-master\PatientAll.cs
-    startLine: 385
+    startLine: 387
   assemblies:
   - CalendarSolution
   namespace: CalendarSolution
@@ -1718,7 +1718,7 @@ items:
   source:
     id: CurrentTime
     path: C:\Users\Natem\source\repos\Health-Project-master\PatientAll.cs
-    startLine: 391
+    startLine: 393
   assemblies:
   - CalendarSolution
   namespace: CalendarSolution
@@ -1749,7 +1749,7 @@ items:
   source:
     id: PatientNotes
     path: C:\Users\Natem\source\repos\Health-Project-master\PatientAll.cs
-    startLine: 398
+    startLine: 400
   assemblies:
   - CalendarSolution
   namespace: CalendarSolution
@@ -2189,13 +2189,6 @@ references:
   name: Temp
   nameWithType: PatientAll.Temp
   fullName: CalendarSolution.PatientAll.Temp
-- uid: System.Double
-  commentId: T:System.Double
-  parent: System
-  isExternal: true
-  name: Double
-  nameWithType: Double
-  fullName: System.Double
 - uid: CalendarSolution.PatientAll.Pulse*
   commentId: Overload:CalendarSolution.PatientAll.Pulse
   name: Pulse

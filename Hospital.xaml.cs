@@ -51,12 +51,12 @@ namespace CalendarSolution
         protected void genPatients()
         {
             string[] patients = Directory.GetDirectories(path);
-            int[] spacing = { 20, 100, 180};
+            int[] spacing = { 20, 100, 180, 240};
             int spacingIndex = 0;
             int verticalSpacing = 40;
             int roomnumber = 1000;
             makeLabel();
-       
+
 
 
             foreach (string patient in patients) //Loops through each patient and their hospital info notes
@@ -65,33 +65,50 @@ namespace CalendarSolution
                 string patientName = DirList[DirList.Length - 1];
                 PatientAll tempData = deserialize(path + "/" + patientName + "/PatientData/" + patientName + "_Data.json");
 
-                Label roomLabel = new Label();
-                roomLabel.Content = roomnumber;
+                Label roomLabel = new Label
+                {
+                    Content = roomnumber
+                };
                 PatientList.Children.Add(roomLabel);
                 Canvas.SetTop(roomLabel, verticalSpacing);
                 Canvas.SetLeft(roomLabel, spacing[spacingIndex]);
                 roomnumber++;
                 spacingIndex++;
 
-                Label patientLabel = new Label();
-                patientLabel.Content = tempData.Name;
+                Label patientLabel = new Label
+                {
+                    Content = tempData.Name
+                };
                 PatientList.Children.Add(patientLabel);
                 Canvas.SetTop(patientLabel, verticalSpacing);
                 Canvas.SetLeft(patientLabel, spacing[spacingIndex]);
                 spacingIndex++;
 
-                Label docLabel = new Label();
-                docLabel.Content = tempData.Doc;
+                Label docLabel = new Label
+                {
+                    Content = tempData.Doc
+                };
                 PatientList.Children.Add(docLabel);
                 Canvas.SetTop(docLabel, verticalSpacing);
                 Canvas.SetLeft(docLabel, spacing[spacingIndex]);
-                spacingIndex=0;
+                spacingIndex++;
+
+                Button button = new Button
+                {
+                    Content = $"Open {tempData.Name} records",
+                    Tag = tempData.Name
+                };
+                button.Click += new RoutedEventHandler(this.openRecords);
+                PatientList.Children.Add(button);
+                Canvas.SetTop(button, verticalSpacing);
+                Canvas.SetLeft(button, spacing[spacingIndex]);
+                spacingIndex = 0;
                 verticalSpacing += 20;
             }
         }
 
         /// <summary>
-        /// Creates the indivifual labels
+        /// Creates the individual labels
         /// </summary>
         protected void makeLabel()
         {
@@ -129,6 +146,15 @@ namespace CalendarSolution
             PatientAll tempData = (PatientAll)serializer.Deserialize(reader);
             reader.Close();
             return tempData;
+        }
+
+
+        void openRecords(object sender, RoutedEventArgs e)
+        {
+            Button button = (Button)sender;
+            PatientAll RecordPatient = deserialize($"{path}/{button.Tag}/PatientData/{button.Tag}_Data.json"); //Fix Path
+            Records record = new Records(Username, path, RecordPatient);
+            record.Show();
         }
 
         /// <summary>

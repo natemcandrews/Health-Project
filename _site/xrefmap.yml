@@ -1543,6 +1543,109 @@ references:
   isSpec: "True"
   fullName: CalendarSolution.Progress.Timer_Click
   nameWithType: Progress.Timer_Click
+- uid: CalendarSolution.Records
+  name: Records
+  href: api/CalendarSolution.Records.html
+  commentId: T:CalendarSolution.Records
+  fullName: CalendarSolution.Records
+  nameWithType: Records
+- uid: CalendarSolution.Records.#ctor
+  name: Records()
+  href: api/CalendarSolution.Records.html#CalendarSolution_Records__ctor
+  commentId: M:CalendarSolution.Records.#ctor
+  fullName: CalendarSolution.Records.Records()
+  nameWithType: Records.Records()
+- uid: CalendarSolution.Records.#ctor(System.String,System.String,CalendarSolution.PatientAll)
+  name: Records(String, String, PatientAll)
+  href: api/CalendarSolution.Records.html#CalendarSolution_Records__ctor_System_String_System_String_CalendarSolution_PatientAll_
+  commentId: M:CalendarSolution.Records.#ctor(System.String,System.String,CalendarSolution.PatientAll)
+  fullName: CalendarSolution.Records.Records(System.String, System.String, CalendarSolution.PatientAll)
+  nameWithType: Records.Records(String, String, PatientAll)
+- uid: CalendarSolution.Records.#ctor*
+  name: Records
+  href: api/CalendarSolution.Records.html#CalendarSolution_Records__ctor_
+  commentId: Overload:CalendarSolution.Records.#ctor
+  isSpec: "True"
+  fullName: CalendarSolution.Records.Records
+  nameWithType: Records.Records
+- uid: CalendarSolution.Records.cbItems
+  name: cbItems
+  href: api/CalendarSolution.Records.html#CalendarSolution_Records_cbItems
+  commentId: P:CalendarSolution.Records.cbItems
+  fullName: CalendarSolution.Records.cbItems
+  nameWithType: Records.cbItems
+- uid: CalendarSolution.Records.cbItems*
+  name: cbItems
+  href: api/CalendarSolution.Records.html#CalendarSolution_Records_cbItems_
+  commentId: Overload:CalendarSolution.Records.cbItems
+  isSpec: "True"
+  fullName: CalendarSolution.Records.cbItems
+  nameWithType: Records.cbItems
+- uid: CalendarSolution.Records.createCombo
+  name: createCombo()
+  href: api/CalendarSolution.Records.html#CalendarSolution_Records_createCombo
+  commentId: M:CalendarSolution.Records.createCombo
+  fullName: CalendarSolution.Records.createCombo()
+  nameWithType: Records.createCombo()
+- uid: CalendarSolution.Records.createCombo*
+  name: createCombo
+  href: api/CalendarSolution.Records.html#CalendarSolution_Records_createCombo_
+  commentId: Overload:CalendarSolution.Records.createCombo
+  isSpec: "True"
+  fullName: CalendarSolution.Records.createCombo
+  nameWithType: Records.createCombo
+- uid: CalendarSolution.Records.displayRecords(System.String,CalendarSolution.PatientAll)
+  name: displayRecords(String, PatientAll)
+  href: api/CalendarSolution.Records.html#CalendarSolution_Records_displayRecords_System_String_CalendarSolution_PatientAll_
+  commentId: M:CalendarSolution.Records.displayRecords(System.String,CalendarSolution.PatientAll)
+  fullName: CalendarSolution.Records.displayRecords(System.String, CalendarSolution.PatientAll)
+  nameWithType: Records.displayRecords(String, PatientAll)
+- uid: CalendarSolution.Records.displayRecords*
+  name: displayRecords
+  href: api/CalendarSolution.Records.html#CalendarSolution_Records_displayRecords_
+  commentId: Overload:CalendarSolution.Records.displayRecords
+  isSpec: "True"
+  fullName: CalendarSolution.Records.displayRecords
+  nameWithType: Records.displayRecords
+- uid: CalendarSolution.Records.SelectedcbItem
+  name: SelectedcbItem
+  href: api/CalendarSolution.Records.html#CalendarSolution_Records_SelectedcbItem
+  commentId: P:CalendarSolution.Records.SelectedcbItem
+  fullName: CalendarSolution.Records.SelectedcbItem
+  nameWithType: Records.SelectedcbItem
+- uid: CalendarSolution.Records.SelectedcbItem*
+  name: SelectedcbItem
+  href: api/CalendarSolution.Records.html#CalendarSolution_Records_SelectedcbItem_
+  commentId: Overload:CalendarSolution.Records.SelectedcbItem
+  isSpec: "True"
+  fullName: CalendarSolution.Records.SelectedcbItem
+  nameWithType: Records.SelectedcbItem
+- uid: CalendarSolution.Records.selectedVital
+  name: selectedVital
+  href: api/CalendarSolution.Records.html#CalendarSolution_Records_selectedVital
+  commentId: P:CalendarSolution.Records.selectedVital
+  fullName: CalendarSolution.Records.selectedVital
+  nameWithType: Records.selectedVital
+- uid: CalendarSolution.Records.selectedVital*
+  name: selectedVital
+  href: api/CalendarSolution.Records.html#CalendarSolution_Records_selectedVital_
+  commentId: Overload:CalendarSolution.Records.selectedVital
+  isSpec: "True"
+  fullName: CalendarSolution.Records.selectedVital
+  nameWithType: Records.selectedVital
+- uid: CalendarSolution.Records.vitalCB
+  name: vitalCB
+  href: api/CalendarSolution.Records.html#CalendarSolution_Records_vitalCB
+  commentId: P:CalendarSolution.Records.vitalCB
+  fullName: CalendarSolution.Records.vitalCB
+  nameWithType: Records.vitalCB
+- uid: CalendarSolution.Records.vitalCB*
+  name: vitalCB
+  href: api/CalendarSolution.Records.html#CalendarSolution_Records_vitalCB_
+  commentId: Overload:CalendarSolution.Records.vitalCB
+  isSpec: "True"
+  fullName: CalendarSolution.Records.vitalCB
+  nameWithType: Records.vitalCB
 - uid: CalendarSolution.Urinalysis
   name: Urinalysis
   href: api/CalendarSolution.Urinalysis.html

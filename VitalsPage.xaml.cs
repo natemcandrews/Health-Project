@@ -55,7 +55,7 @@ namespace CalendarSolution
         { 
             PatientAll logVitalCast = (PatientAll) this.DataContext;
 
-            LogVital log = new LogVital { Temp = (double)logVitalCast.Temp, Pulse = logVitalCast.Pulse, Respirations = logVitalCast.Respirations, BP = logVitalCast.BP, PulseOx = logVitalCast.PulseOx };
+            LogVital log = new LogVital { Temp = double.Parse(logVitalCast.Temp), Pulse = logVitalCast.Pulse, Respirations = logVitalCast.Respirations, BP = logVitalCast.BP, PulseOx = logVitalCast.PulseOx };
             XmlSerializer LogSerializer = new XmlSerializer(log.GetType());
             StreamWriter LogWriter = File.CreateText("C:/Patient Forms/" + Username + "/" + PatientName + "/Vital Logs/" + "   " + log.TimeofLog.Replace(':', '-') + ".json");
             LogSerializer.Serialize(LogWriter.BaseStream, log);
