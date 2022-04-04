@@ -40,7 +40,7 @@ namespace CalendarSolution
             Patient = name;
             PatientNotes = fullData.PatientNotes;
             this.DataContext = fullData;
-            
+
 
             Timer.Tick += new EventHandler(Timer_Click);
             Timer.Start();

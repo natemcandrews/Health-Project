@@ -194,7 +194,7 @@ namespace CalendarSolution
             SelectedcbItem = cbItem;
             cbItems.Add(cbItem);
 
-            DirectoryInfo di = new DirectoryInfo(path + "/" + PatientName + "/Images/Names");
+            DirectoryInfo di = new DirectoryInfo(path + "/" + PatientName + "/Images");
             FileInfo[] files = di.GetFiles();
             
             

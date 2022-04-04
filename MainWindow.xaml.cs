@@ -95,7 +95,6 @@ namespace CalendarSolution
         void NewDatabase(object sender, RoutedEventArgs e)
         {
             Directory.CreateDirectory(path + "/" + PatientData.Name + "/Images");
-            Directory.CreateDirectory(path + "/" + PatientData.Name + "/Images/Names");
             Directory.CreateDirectory(path + "/" + PatientData.Name + "/PatientData");
             Directory.CreateDirectory(path + "/" + PatientData.Name + "/Vital Logs");
             PatientDataBase DataBase = new PatientDataBase(PatientData.Name, Username, PatientData, path);
@@ -106,12 +105,9 @@ namespace CalendarSolution
 
 
 
-//Check the saving for Images like test results
-//Seeing past records for a patient
 //Appointment Scheduler
 //Add logout button
 //Add toggle Hospital and toggle Clinic button
-//Dynamic Hospital Page
 
 
 /*Patient Record notes

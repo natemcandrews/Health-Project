@@ -54,7 +54,14 @@ namespace CalendarSolution
         private void Button_Click(object sender, RoutedEventArgs e)
         { 
             PatientAll logVitalCast = (PatientAll) this.DataContext;
-
+            try
+            {
+                double.Parse(logVitalCast.Temp);
+            } catch (Exception ex) { 
+                MessageBox.Show($"Invalid temperature: {logVitalCast.Temp}, setting to 0");
+                logVitalCast.Temp = "0";
+                Console.WriteLine(ex.Message);
+            }
             LogVital log = new LogVital { Temp = double.Parse(logVitalCast.Temp), Pulse = logVitalCast.Pulse, Respirations = logVitalCast.Respirations, BP = logVitalCast.BP, PulseOx = logVitalCast.PulseOx };
             XmlSerializer LogSerializer = new XmlSerializer(log.GetType());
             StreamWriter LogWriter = File.CreateText("C:/Patient Forms/" + Username + "/" + PatientName + "/Vital Logs/" + "   " + log.TimeofLog.Replace(':', '-') + ".json");

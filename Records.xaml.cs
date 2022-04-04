@@ -26,6 +26,7 @@ namespace CalendarSolution
         public ComboBoxItem selectedVital { get; set; }
         string PatientName;
         string path;
+        string Username;
 
         /// <summary>
         /// Empty constructor for **Records** to add security
@@ -39,13 +40,14 @@ namespace CalendarSolution
         /// **Records** class used to create a seperate window for showing records
         /// </summary>
         /// <param name="fullData"></param>
-        public Records(string Username, string Path, PatientAll fullData)
+        public Records(string username, string Path, PatientAll fullData)
         {
             InitializeComponent();
             this.DataContext = fullData;
             path = Path;
             PatientName = fullData.Name;
-            displayRecords(Username, fullData);
+            Username = username;
+            displayRecords(username, fullData);
             createCombo();
         }
 
@@ -54,14 +56,21 @@ namespace CalendarSolution
             RecordFrame.Content = new FullPatientFile(Username, fullData);
         }
 
+        protected void Open_Image(object sender, RoutedEventArgs e) //Opens image upload page
+        {
+            RecordFrame.Content = new Imaging(PatientName, Username, SelectedcbItem.Content.ToString(), cbItems, path); //Opens Imaging form for accessing a previously saved image
+        }
 
+        protected void Delete(object sender, RoutedEventArgs e)
+        {
+            Directory.Delete($"{path}/{PatientName}", true);
+            this.Close();
+        }
 
 
 
         public void createCombo()
         {
-
-
             DataContext = this;
 
             cbItems = new ObservableCollection<ComboBoxItem>();
@@ -69,7 +78,7 @@ namespace CalendarSolution
             SelectedcbItem = cbItem;
             cbItems.Add(cbItem);
 
-            DirectoryInfo di = new DirectoryInfo($"{path}/{PatientName}/Images/Names");
+            DirectoryInfo di = new DirectoryInfo($"{path}/{PatientName}/Images");
             FileInfo[] files = di.GetFiles();
 
 
@@ -92,7 +101,6 @@ namespace CalendarSolution
             {
                 vitalCB.Add(new ComboBoxItem { Content = Vital, HorizontalContentAlignment = 0, VerticalContentAlignment = 0 });
             }
-
         }
     }
 }

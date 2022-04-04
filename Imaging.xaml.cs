@@ -51,6 +51,7 @@ namespace CalendarSolution
             PatientName = patientname; //Initialization of the form, patients name, and username
             cbItems = cbitem;
             path = Path;
+            addCombo(true);
         }
 
         /// <summary>
@@ -84,6 +85,7 @@ namespace CalendarSolution
 
             }
             else { MessageBox.Show("That image does not exist"); } //Creates new form for patient if there is no data
+            addCombo(true);
         }
 
         /// <summary>
@@ -91,21 +93,7 @@ namespace CalendarSolution
         /// </summary>
         /// <param name="sender"> Default parameter for Buttons</param>
         /// <param name="e"> Default parameter for Buttons</param>
-        protected void btnSave_Click(object sender, RoutedEventArgs e)
-        {
-            XmlSerializer serializer = new XmlSerializer(image.GetType());
-            StreamWriter writer = File.CreateText(path + "/" + PatientName + "/Images/Names/" + image.Title + ".json"); //Copies the image description to the storage folder
-            serializer.Serialize(writer.BaseStream, this.DataContext);
-            writer.Close();
 
-            DirectoryInfo di = new DirectoryInfo(path + "/" + PatientName + "/Images/Names");
-            FileInfo[] files = di.GetFiles();
-
-
-            addCombo(true);
-            
-
-        }
 
         /// <summary>
         /// Add option to list of images
@@ -116,7 +104,7 @@ namespace CalendarSolution
         {
             foreach (ComboBoxItem combo in cbItems) //Loops through each combobo item
             {
-                if (combo.Content.Equals(image.Title) && !string.IsNullOrEmpty(combo.Content.ToString())) //Checks if another item already exists
+                if (string.IsNullOrEmpty(combo.Content.ToString()) && combo.Content.Equals(image.Title)) //Checks if another item already exists
                 {
                     add = false;
                 }
@@ -149,6 +137,8 @@ namespace CalendarSolution
                 imgPhoto.Source = new BitmapImage(uri); //Displays the Image
             }
             XmlSerializer serializer = new XmlSerializer(image.GetType());
+
+            addCombo(true);
         }
     }
 }

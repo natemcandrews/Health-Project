@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CalendarSolution"
         mc:Ignorable="d"
-        Title="Records" Height="500" Width="950">
+        Title="Records" Height="500" Width="1000">
     
     
     <Grid>
@@ -15,7 +15,9 @@
         </Grid.ColumnDefinitions>
 
         <Canvas Name="Buttons">
-            <ComboBox ItemsSource="{Binding cbItems}" SelectedItem="{Binding SelectedcbItem}"  Height="20" Margin="10,10,0,0"/>
+            <ComboBox ItemsSource="{Binding cbItems}" SelectedItem="{Binding SelectedcbItem}"  Height="20" Width="100" Margin="10,10,0,0"/>
+            <Button Content="Open Image" Height="20" Width="100" Margin="10, 40, 0, 0" Click="Open_Image"/>
+            <Button Content="Delete Patient File" Height="20" Width="100" Margin="10, 400, 0, 0" Click="Delete"/>
         </Canvas>
 
         <Canvas Name="RecordCanvas" Grid.Column="1">

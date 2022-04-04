@@ -21,6 +21,7 @@ namespace CalendarSolution
         PatientAll PatientData = new PatientAll();
         string Username;
         string path;
+        System.Windows.Threading.DispatcherTimer Timer = new System.Windows.Threading.DispatcherTimer();
 
         /// <summary>
         /// Empty Constructor for **Hospital** to add security
@@ -42,6 +43,17 @@ namespace CalendarSolution
             Username = username;
             this.DataContext = PatientData;
             path = Path;
+            makeLabel();
+            genPatients();
+
+            Timer.Tick += new EventHandler(Timer_Click);
+            Timer.Start();
+            Timer.Interval = new TimeSpan(0, 0, 1);
+        }
+
+        protected void Timer_Click(object sender, EventArgs e)
+        {
+            
             genPatients();
         }
 
@@ -50,20 +62,41 @@ namespace CalendarSolution
         /// </summary>
         protected void genPatients()
         {
+            List<UIElement> items = new List<UIElement>();
             string[] patients = Directory.GetDirectories(path);
             int[] spacing = { 20, 100, 180, 240};
             int spacingIndex = 0;
             int verticalSpacing = 40;
             int roomnumber = 1000;
-            makeLabel();
 
+            foreach(UIElement item in PatientList.Children)
+            {
+                if (!(item is TextBlock))
+                {
+                    items.Add(item);
+                }
+            }
+            foreach(UIElement item in items)
+            {
+                PatientList.Children.Remove(item);
+            }
 
 
             foreach (string patient in patients) //Loops through each patient and their hospital info notes
             {
                 string[] DirList = patient.Split('\\');
                 string patientName = DirList[DirList.Length - 1];
-                PatientAll tempData = deserialize(path + "/" + patientName + "/PatientData/" + patientName + "_Data.json");
+                PatientAll tempData;
+                try
+                {
+                    tempData = deserialize(path + "/" + patientName + "/PatientData/" + patientName + "_Data.json");
+                } catch(FileNotFoundException ex)
+                {
+                    Console.WriteLine(ex.Message);
+                    break;
+                }
+
+                
 
                 Label roomLabel = new Label
                 {
@@ -166,7 +199,6 @@ namespace CalendarSolution
         void NewDatabase(object sender, RoutedEventArgs e)
         {
             Directory.CreateDirectory(path + "/" + PatientData.Name + "/Images");
-            Directory.CreateDirectory(path + "/" + PatientData.Name + "/Images/Names");
             Directory.CreateDirectory(path + "/" + PatientData.Name + "/PatientData");
             Directory.CreateDirectory(path + "/" + PatientData.Name + "/Vital Logs");
             PatientDataBase DataBase = new PatientDataBase(PatientData.Name, Username, PatientData, path);
