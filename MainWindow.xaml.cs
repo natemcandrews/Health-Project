@@ -1,4 +1,7 @@
-﻿using System.Collections.Generic;
+﻿using CalendarSolution.Controls;
+using OutlookCalendar.Model;
+using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Text.Json;
 using System.Windows;
@@ -40,52 +43,9 @@ namespace CalendarSolution
             Username = username;
             this.DataContext = PatientData;
             path = Path;
-            ColorDates();
         }
 
 
-        /// <summary>
-        /// Colors in the calndar item for the dates that the patients have been registered under
-        /// </summary>
-        void ColorDates() //Will be used to keep track of patient appointment dates
-        {
-            string PatientFiles = path;
-
-            Dictionary<string, Color> dates = new Dictionary<string, Color>();
-
-            try
-            {
-                foreach (string PatientFile in Directory.GetDirectories(PatientFiles))
-                {
-                    string PatientFileName = PatientFile.Replace(PatientFiles, "");
-                    PatientFileName = PatientFileName.Substring(1);
-                    XmlSerializer serializer = new XmlSerializer(PatientData.GetType()); //Serializes data if it exists
-                    string patPath = path + "/" + PatientFileName + "/PatientData/" + PatientFileName + "_Data.json";
-                    StreamReader reader = File.OpenText(patPath);
-                    PatientAll myPat = (PatientAll)serializer.Deserialize(reader);
-                    reader.Close();
-                    dates.Add(myPat.Date, Color.FromArgb(255, 255, 0, 0));
-                }
-            }
-
-            catch (IOException) { }
-
-
-            Style style = new Style(typeof(CalendarDayButton));
-
-            foreach (KeyValuePair<string, Color> item in dates) //Loops through the dates for each appointment
-            {
-                DataTrigger trigger = new DataTrigger()
-                {
-                    Value = item.Key,
-                    Binding = new Binding("Date")
-                };
-                trigger.Setters.Add(new Setter(Control.BackgroundProperty, new SolidColorBrush(item.Value)));
-                style.Triggers.Add(trigger);
-            }
-            MyCalendar.CalendarDayButtonStyle = style;
-
-        }
 
         /// <summary>
         /// Creates new directory path for a new patient
@@ -100,22 +60,31 @@ namespace CalendarSolution
             PatientDataBase DataBase = new PatientDataBase(PatientData.Name, Username, PatientData, path);
             DataBase.Show();
         }
+
+        protected void ToggleHospital(object sender, RoutedEventArgs e)
+        {
+            Hospital hospital = new Hospital(Username, path);
+            hospital.Show();
+            this.Close();
+        }
+
+        protected void newSchedule(object sender, RoutedEventArgs e)
+        {
+            Button temp = (Button)sender;
+            try
+            {
+                DateTime theDate = (DateTime)temp.Content;
+                DateProperty.ScheduleDate = theDate;
+                AppointmentWindow schedule = new AppointmentWindow();
+                schedule.Show();
+            } catch (NullReferenceException)
+            {
+                MessageBox.Show("Please select a date first");
+            }
+            
+        }
     }
 }
 
 
 
-//Appointment Scheduler
-//Add logout button
-//Add toggle Hospital and toggle Clinic button
-
-
-/*Patient Record notes
- * - Records window ******
- * - Seperate window to display progress form *****
- * - Add a delete button to the seperate window
- * - Records window can also show images
- * - Records can show the vitals 
- * 
- * - Essentially a way to access patient attributes, graphs, and images at the same time
- */

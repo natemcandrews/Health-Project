@@ -7,6 +7,8 @@ items:
   children:
   - CalendarSolution.MainWindow.#ctor
   - CalendarSolution.MainWindow.#ctor(System.String,System.String)
+  - CalendarSolution.MainWindow.newSchedule(System.Object,System.Windows.RoutedEventArgs)
+  - CalendarSolution.MainWindow.ToggleHospital(System.Object,System.Windows.RoutedEventArgs)
   langs:
   - csharp
   - vb
@@ -17,7 +19,7 @@ items:
   source:
     id: MainWindow
     path: C:\Users\Natem\source\repos\Health-Project-master\MainWindow.xaml.cs
-    startLine: 13
+    startLine: 16
   assemblies:
   - CalendarSolution
   namespace: CalendarSolution
@@ -746,7 +748,7 @@ items:
   source:
     id: .ctor
     path: C:\Users\Natem\source\repos\Health-Project-master\MainWindow.xaml.cs
-    startLine: 25
+    startLine: 28
   assemblies:
   - CalendarSolution
   namespace: CalendarSolution
@@ -774,7 +776,7 @@ items:
   source:
     id: .ctor
     path: C:\Users\Natem\source\repos\Health-Project-master\MainWindow.xaml.cs
-    startLine: 36
+    startLine: 39
   assemblies:
   - CalendarSolution
   namespace: CalendarSolution
@@ -795,6 +797,68 @@ items:
   - public
   modifiers.vb:
   - Public
+- uid: CalendarSolution.MainWindow.ToggleHospital(System.Object,System.Windows.RoutedEventArgs)
+  commentId: M:CalendarSolution.MainWindow.ToggleHospital(System.Object,System.Windows.RoutedEventArgs)
+  id: ToggleHospital(System.Object,System.Windows.RoutedEventArgs)
+  parent: CalendarSolution.MainWindow
+  langs:
+  - csharp
+  - vb
+  name: ToggleHospital(Object, RoutedEventArgs)
+  nameWithType: MainWindow.ToggleHospital(Object, RoutedEventArgs)
+  fullName: CalendarSolution.MainWindow.ToggleHospital(System.Object, System.Windows.RoutedEventArgs)
+  type: Method
+  source:
+    id: ToggleHospital
+    path: C:\Users\Natem\source\repos\Health-Project-master\MainWindow.xaml.cs
+    startLine: 63
+  assemblies:
+  - CalendarSolution
+  namespace: CalendarSolution
+  syntax:
+    content: protected void ToggleHospital(object sender, RoutedEventArgs e)
+    parameters:
+    - id: sender
+      type: System.Object
+    - id: e
+      type: System.Windows.RoutedEventArgs
+    content.vb: Protected Sub ToggleHospital(sender As Object, e As RoutedEventArgs)
+  overload: CalendarSolution.MainWindow.ToggleHospital*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: CalendarSolution.MainWindow.newSchedule(System.Object,System.Windows.RoutedEventArgs)
+  commentId: M:CalendarSolution.MainWindow.newSchedule(System.Object,System.Windows.RoutedEventArgs)
+  id: newSchedule(System.Object,System.Windows.RoutedEventArgs)
+  parent: CalendarSolution.MainWindow
+  langs:
+  - csharp
+  - vb
+  name: newSchedule(Object, RoutedEventArgs)
+  nameWithType: MainWindow.newSchedule(Object, RoutedEventArgs)
+  fullName: CalendarSolution.MainWindow.newSchedule(System.Object, System.Windows.RoutedEventArgs)
+  type: Method
+  source:
+    id: newSchedule
+    path: C:\Users\Natem\source\repos\Health-Project-master\MainWindow.xaml.cs
+    startLine: 70
+  assemblies:
+  - CalendarSolution
+  namespace: CalendarSolution
+  syntax:
+    content: protected void newSchedule(object sender, RoutedEventArgs e)
+    parameters:
+    - id: sender
+      type: System.Object
+    - id: e
+      type: System.Windows.RoutedEventArgs
+    content.vb: Protected Sub newSchedule(sender As Object, e As RoutedEventArgs)
+  overload: CalendarSolution.MainWindow.newSchedule*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
 references:
 - uid: CalendarSolution
   commentId: N:CalendarSolution
@@ -13593,3 +13657,20 @@ references:
   name: String
   nameWithType: String
   fullName: System.String
+- uid: CalendarSolution.MainWindow.ToggleHospital*
+  commentId: Overload:CalendarSolution.MainWindow.ToggleHospital
+  name: ToggleHospital
+  nameWithType: MainWindow.ToggleHospital
+  fullName: CalendarSolution.MainWindow.ToggleHospital
+- uid: System.Windows.RoutedEventArgs
+  commentId: T:System.Windows.RoutedEventArgs
+  parent: System.Windows
+  isExternal: true
+  name: RoutedEventArgs
+  nameWithType: RoutedEventArgs
+  fullName: System.Windows.RoutedEventArgs
+- uid: CalendarSolution.MainWindow.newSchedule*
+  commentId: Overload:CalendarSolution.MainWindow.newSchedule
+  name: newSchedule
+  nameWithType: MainWindow.newSchedule
+  fullName: CalendarSolution.MainWindow.newSchedule

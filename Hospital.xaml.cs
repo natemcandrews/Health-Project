@@ -53,7 +53,6 @@ namespace CalendarSolution
 
         protected void Timer_Click(object sender, EventArgs e)
         {
-            
             genPatients();
         }
 
@@ -203,6 +202,13 @@ namespace CalendarSolution
             Directory.CreateDirectory(path + "/" + PatientData.Name + "/Vital Logs");
             PatientDataBase DataBase = new PatientDataBase(PatientData.Name, Username, PatientData, path);
             DataBase.Show();
+        }
+
+        protected void ToggleClinic(object sender, RoutedEventArgs e)
+        {
+            MainWindow clinic = new MainWindow(Username, path);
+            clinic.Show();
+            this.Close();
         }
     }
 }

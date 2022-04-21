@@ -1,0 +1,70 @@
+### YamlMime:ManagedReference
+items:
+- uid: OutlookCalendar.Controls
+  commentId: N:OutlookCalendar.Controls
+  id: OutlookCalendar.Controls
+  children:
+  - OutlookCalendar.Controls.Calendar
+  - OutlookCalendar.Controls.CalendarAppointmentItem
+  - OutlookCalendar.Controls.CalendarDay
+  - OutlookCalendar.Controls.CalendarLedger
+  - OutlookCalendar.Controls.CalendarLedgerItem
+  - OutlookCalendar.Controls.CalendarTimeslotItem
+  - OutlookCalendar.Controls.Filters
+  - OutlookCalendar.Controls.TimeslotPanel
+  langs:
+  - csharp
+  - vb
+  name: OutlookCalendar.Controls
+  nameWithType: OutlookCalendar.Controls
+  fullName: OutlookCalendar.Controls
+  type: Namespace
+  assemblies:
+  - CalendarSolution
+references:
+- uid: OutlookCalendar.Controls.Calendar
+  commentId: T:OutlookCalendar.Controls.Calendar
+  name: Calendar
+  nameWithType: Calendar
+  fullName: OutlookCalendar.Controls.Calendar
+- uid: OutlookCalendar.Controls.CalendarAppointmentItem
+  commentId: T:OutlookCalendar.Controls.CalendarAppointmentItem
+  name: CalendarAppointmentItem
+  nameWithType: CalendarAppointmentItem
+  fullName: OutlookCalendar.Controls.CalendarAppointmentItem
+- uid: OutlookCalendar.Controls.CalendarDay
+  commentId: T:OutlookCalendar.Controls.CalendarDay
+  name: CalendarDay
+  nameWithType: CalendarDay
+  fullName: OutlookCalendar.Controls.CalendarDay
+- uid: OutlookCalendar.Controls.CalendarLedger
+  commentId: T:OutlookCalendar.Controls.CalendarLedger
+  name: CalendarLedger
+  nameWithType: CalendarLedger
+  fullName: OutlookCalendar.Controls.CalendarLedger
+- uid: OutlookCalendar.Controls.CalendarLedgerItem
+  commentId: T:OutlookCalendar.Controls.CalendarLedgerItem
+  name: CalendarLedgerItem
+  nameWithType: CalendarLedgerItem
+  fullName: OutlookCalendar.Controls.CalendarLedgerItem
+- uid: OutlookCalendar.Controls.CalendarTimeslotItem
+  commentId: T:OutlookCalendar.Controls.CalendarTimeslotItem
+  name: CalendarTimeslotItem
+  nameWithType: CalendarTimeslotItem
+  fullName: OutlookCalendar.Controls.CalendarTimeslotItem
+- uid: OutlookCalendar.Controls.Filters
+  commentId: T:OutlookCalendar.Controls.Filters
+  parent: OutlookCalendar.Controls
+  name: Filters
+  nameWithType: Filters
+  fullName: OutlookCalendar.Controls.Filters
+- uid: OutlookCalendar.Controls.TimeslotPanel
+  commentId: T:OutlookCalendar.Controls.TimeslotPanel
+  name: TimeslotPanel
+  nameWithType: TimeslotPanel
+  fullName: OutlookCalendar.Controls.TimeslotPanel
+- uid: OutlookCalendar.Controls
+  commentId: N:OutlookCalendar.Controls
+  name: OutlookCalendar.Controls
+  nameWithType: OutlookCalendar.Controls
+  fullName: OutlookCalendar.Controls

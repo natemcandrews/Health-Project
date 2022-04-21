@@ -4,6 +4,28 @@
   "xrefmap": "xrefmap.yml",
   "files": [
     {
+      "type": "Resource",
+      "source_relative_path": "Images/Next.png",
+      "output": {
+        "resource": {
+          "relative_path": "Images/Next.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Images/Previous.png",
+      "output": {
+        "resource": {
+          "relative_path": "Images/Previous.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "api/index.md",
       "output": {
@@ -53,11 +75,35 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "obj/api/CalendarSolution.AddAppointmentWindow.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CalendarSolution.AddAppointmentWindow.html",
+          "hash": "OkJUYwRWRrxgH7F3NmtnTUo/O3JFv2NmuEQHZFwUaOs="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "obj/api/CalendarSolution.App.yml",
       "output": {
         ".html": {
           "relative_path": "api/CalendarSolution.App.html",
           "hash": "O6TywxALuUfa/oN8TGeJjznxSH8IESJhIT5j9knCZpk="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/CalendarSolution.AppointmentWindow.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CalendarSolution.AppointmentWindow.html",
+          "hash": "SO0is1nR8ctfJfmC9m1ctgBHsNs0PbY7LF5txDRwo9Y="
         }
       },
       "is_incremental": true,
@@ -93,7 +139,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CalendarSolution.Hospital.html",
-          "hash": "uWwAtKNJZaM1mGugTCovLE0qE1luWsF6K5bRwO2uExk="
+          "hash": "3idGypQ25puGimcFTqHn5KgNz/uwGY+EHjgtzbjpVdk="
         }
       },
       "is_incremental": true,
@@ -117,10 +163,10 @@
       "output": {
         ".html": {
           "relative_path": "api/CalendarSolution.Imaging.html",
-          "hash": "PGbmUT8r0rAJ9e13tjho3DtBOYj6H4976g+Jku/TO6s="
+          "hash": "tE73Tk2miPwTaDTyc4icnUYYUFrMegfw7ouPnDHRXgo="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -189,7 +235,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CalendarSolution.MainWindow.html",
-          "hash": "/fx1+09fvUXNgPPCtzShOZ99jCs5lQ7vAlSUnTajFu8="
+          "hash": "Pt5bfAUbyUlQWyK5zX0XTvi/yTuCmAl4JEyYIE0naXI="
         }
       },
       "is_incremental": true,
@@ -237,7 +283,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CalendarSolution.Records.html",
-          "hash": "pvyrHFnzURD947eJ3vMhy/nbJrz2j6OGYPU/nTZJm58="
+          "hash": "jfCP1S68mon9dCdS2lgz7rDpYXcxrhdVbNL8IFG8tmM="
         }
       },
       "is_incremental": true,
@@ -309,10 +355,166 @@
       "output": {
         ".html": {
           "relative_path": "api/CalendarSolution.html",
-          "hash": "mdlI2+6sLzkUY1M8x/+C+cSWGHY3yU+6XxuQ72+rx6c="
+          "hash": "3K6bvBvUMc64rctD3MxRwRd1E98BK0C/ZKrauxI8jcg="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OutlookCalendar.Controls.Calendar.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OutlookCalendar.Controls.Calendar.html",
+          "hash": "tOR6mAZ1qtPvP994FULzPv65iJQJ+Oh8hA1q/MLOD0Q="
         }
       },
       "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OutlookCalendar.Controls.CalendarAppointmentItem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OutlookCalendar.Controls.CalendarAppointmentItem.html",
+          "hash": "5jhOPMv66uaG7y16Z3gjB9MePtlQMT/+Fkvv9OCPWWU="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OutlookCalendar.Controls.CalendarDay.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OutlookCalendar.Controls.CalendarDay.html",
+          "hash": "7sndVfMAiRyFxdh/KELoWXE1siSRVhYUeNj5DVOuoF8="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OutlookCalendar.Controls.CalendarLedger.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OutlookCalendar.Controls.CalendarLedger.html",
+          "hash": "xLZpuLp5VTyQ/R6UgjCmxB8LXqvyU9JVzIgNkQt8+bo="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OutlookCalendar.Controls.CalendarLedgerItem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OutlookCalendar.Controls.CalendarLedgerItem.html",
+          "hash": "ontsitl6s7vZmrvHF+fIqQeq4nHQhHnqr8TxEFAuVFM="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OutlookCalendar.Controls.CalendarTimeslotItem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OutlookCalendar.Controls.CalendarTimeslotItem.html",
+          "hash": "ahlWwLS+QSvrjwUb1cICQlBq1ATubfk88gEF+ziqiTo="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OutlookCalendar.Controls.Filters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OutlookCalendar.Controls.Filters.html",
+          "hash": "sLaytgfiUph87YkIj1dQwAz5I/iTY3v35JBDt7xjyhc="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OutlookCalendar.Controls.TimeslotPanel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OutlookCalendar.Controls.TimeslotPanel.html",
+          "hash": "ze5XOVY0al7M6Pd7H0HJP6jxjNUU8U5Foj4rp7LGi0k="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OutlookCalendar.Controls.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OutlookCalendar.Controls.html",
+          "hash": "eNVFDBgGQ0WwQhEMGSKk7CXBkjM6yZ/7HPKZWOSW0pQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OutlookCalendar.Model.Appointment.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OutlookCalendar.Model.Appointment.html",
+          "hash": "yEZx2rHxIHepWJF3SxAKEZuEEt9gDqv61ITT+PF+ZKQ="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OutlookCalendar.Model.Appointments.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OutlookCalendar.Model.Appointments.html",
+          "hash": "gHsNdOqiHjC7dQG2bqvEo36m9IQxWTAwrRUDMKR/XzU="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OutlookCalendar.Model.BindableObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OutlookCalendar.Model.BindableObject.html",
+          "hash": "rkyjbWAsriH8DJMwkpi2ARXEIZq6CQ9r8SsPbJDqafQ="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/OutlookCalendar.Model.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OutlookCalendar.Model.html",
+          "hash": "p8HUTr/rOYgLKJMrHyQ+lsBOExwdMAABH0D2XmBfxDA="
+        }
+      },
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -321,7 +523,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "x4Ht8RQn1icFU6qTIJi8DGduDhuEywkS/qjtpCJdRBc="
+          "hash": "6dMuz5pV0R77CxbcFhnC93pAOA1uErUAiVrUIB59pUE="
         }
       },
       "is_incremental": false,
@@ -358,8 +560,15 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
-          "total_file_count": 22,
-          "skipped_file_count": 21
+          "total_file_count": 37,
+          "skipped_file_count": 36
+        },
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
           "can_incremental": false,

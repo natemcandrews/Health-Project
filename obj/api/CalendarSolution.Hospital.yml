@@ -9,6 +9,8 @@ items:
   - CalendarSolution.Hospital.#ctor(System.String,System.String)
   - CalendarSolution.Hospital.genPatients
   - CalendarSolution.Hospital.makeLabel
+  - CalendarSolution.Hospital.Timer_Click(System.Object,System.EventArgs)
+  - CalendarSolution.Hospital.ToggleClinic(System.Object,System.Windows.RoutedEventArgs)
   langs:
   - csharp
   - vb
@@ -748,7 +750,7 @@ items:
   source:
     id: .ctor
     path: C:\Users\Natem\source\repos\Health-Project-master\Hospital.xaml.cs
-    startLine: 27
+    startLine: 28
   assemblies:
   - CalendarSolution
   namespace: CalendarSolution
@@ -776,7 +778,7 @@ items:
   source:
     id: .ctor
     path: C:\Users\Natem\source\repos\Health-Project-master\Hospital.xaml.cs
-    startLine: 38
+    startLine: 39
   assemblies:
   - CalendarSolution
   namespace: CalendarSolution
@@ -797,6 +799,37 @@ items:
   - public
   modifiers.vb:
   - Public
+- uid: CalendarSolution.Hospital.Timer_Click(System.Object,System.EventArgs)
+  commentId: M:CalendarSolution.Hospital.Timer_Click(System.Object,System.EventArgs)
+  id: Timer_Click(System.Object,System.EventArgs)
+  parent: CalendarSolution.Hospital
+  langs:
+  - csharp
+  - vb
+  name: Timer_Click(Object, EventArgs)
+  nameWithType: Hospital.Timer_Click(Object, EventArgs)
+  fullName: CalendarSolution.Hospital.Timer_Click(System.Object, System.EventArgs)
+  type: Method
+  source:
+    id: Timer_Click
+    path: C:\Users\Natem\source\repos\Health-Project-master\Hospital.xaml.cs
+    startLine: 53
+  assemblies:
+  - CalendarSolution
+  namespace: CalendarSolution
+  syntax:
+    content: protected void Timer_Click(object sender, EventArgs e)
+    parameters:
+    - id: sender
+      type: System.Object
+    - id: e
+      type: System.EventArgs
+    content.vb: Protected Sub Timer_Click(sender As Object, e As EventArgs)
+  overload: CalendarSolution.Hospital.Timer_Click*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
 - uid: CalendarSolution.Hospital.genPatients
   commentId: M:CalendarSolution.Hospital.genPatients
   id: genPatients
@@ -811,7 +844,7 @@ items:
   source:
     id: genPatients
     path: C:\Users\Natem\source\repos\Health-Project-master\Hospital.xaml.cs
-    startLine: 50
+    startLine: 61
   assemblies:
   - CalendarSolution
   namespace: CalendarSolution
@@ -839,7 +872,7 @@ items:
   source:
     id: makeLabel
     path: C:\Users\Natem\source\repos\Health-Project-master\Hospital.xaml.cs
-    startLine: 112
+    startLine: 144
   assemblies:
   - CalendarSolution
   namespace: CalendarSolution
@@ -849,6 +882,37 @@ items:
     content: protected void makeLabel()
     content.vb: Protected Sub makeLabel
   overload: CalendarSolution.Hospital.makeLabel*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: CalendarSolution.Hospital.ToggleClinic(System.Object,System.Windows.RoutedEventArgs)
+  commentId: M:CalendarSolution.Hospital.ToggleClinic(System.Object,System.Windows.RoutedEventArgs)
+  id: ToggleClinic(System.Object,System.Windows.RoutedEventArgs)
+  parent: CalendarSolution.Hospital
+  langs:
+  - csharp
+  - vb
+  name: ToggleClinic(Object, RoutedEventArgs)
+  nameWithType: Hospital.ToggleClinic(Object, RoutedEventArgs)
+  fullName: CalendarSolution.Hospital.ToggleClinic(System.Object, System.Windows.RoutedEventArgs)
+  type: Method
+  source:
+    id: ToggleClinic
+    path: C:\Users\Natem\source\repos\Health-Project-master\Hospital.xaml.cs
+    startLine: 206
+  assemblies:
+  - CalendarSolution
+  namespace: CalendarSolution
+  syntax:
+    content: protected void ToggleClinic(object sender, RoutedEventArgs e)
+    parameters:
+    - id: sender
+      type: System.Object
+    - id: e
+      type: System.Windows.RoutedEventArgs
+    content.vb: Protected Sub ToggleClinic(sender As Object, e As RoutedEventArgs)
+  overload: CalendarSolution.Hospital.ToggleClinic*
   modifiers.csharp:
   - protected
   modifiers.vb:
@@ -13651,6 +13715,18 @@ references:
   name: String
   nameWithType: String
   fullName: System.String
+- uid: CalendarSolution.Hospital.Timer_Click*
+  commentId: Overload:CalendarSolution.Hospital.Timer_Click
+  name: Timer_Click
+  nameWithType: Hospital.Timer_Click
+  fullName: CalendarSolution.Hospital.Timer_Click
+- uid: System.EventArgs
+  commentId: T:System.EventArgs
+  parent: System
+  isExternal: true
+  name: EventArgs
+  nameWithType: EventArgs
+  fullName: System.EventArgs
 - uid: CalendarSolution.Hospital.genPatients*
   commentId: Overload:CalendarSolution.Hospital.genPatients
   name: genPatients
@@ -13661,3 +13737,15 @@ references:
   name: makeLabel
   nameWithType: Hospital.makeLabel
   fullName: CalendarSolution.Hospital.makeLabel
+- uid: CalendarSolution.Hospital.ToggleClinic*
+  commentId: Overload:CalendarSolution.Hospital.ToggleClinic
+  name: ToggleClinic
+  nameWithType: Hospital.ToggleClinic
+  fullName: CalendarSolution.Hospital.ToggleClinic
+- uid: System.Windows.RoutedEventArgs
+  commentId: T:System.Windows.RoutedEventArgs
+  parent: System.Windows
+  isExternal: true
+  name: RoutedEventArgs
+  nameWithType: RoutedEventArgs
+  fullName: System.Windows.RoutedEventArgs

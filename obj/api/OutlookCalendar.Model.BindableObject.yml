@@ -1,0 +1,582 @@
+### YamlMime:ManagedReference
+items:
+- uid: OutlookCalendar.Model.BindableObject
+  commentId: T:OutlookCalendar.Model.BindableObject
+  id: BindableObject
+  parent: OutlookCalendar.Model
+  children:
+  - OutlookCalendar.Model.BindableObject.#ctor
+  - OutlookCalendar.Model.BindableObject.AfterPropertyChanged(System.String)
+  - OutlookCalendar.Model.BindableObject.GetPropertyChangedEventArgs(System.String)
+  - OutlookCalendar.Model.BindableObject.PropertyChanged
+  - OutlookCalendar.Model.BindableObject.RaisePropertyChanged(System.String)
+  langs:
+  - csharp
+  - vb
+  name: BindableObject
+  nameWithType: BindableObject
+  fullName: OutlookCalendar.Model.BindableObject
+  type: Class
+  source:
+    id: BindableObject
+    path: C:\Users\Natem\source\repos\Health-Project-master\Model\BindableObject.cs
+    startLine: 20
+  assemblies:
+  - CalendarSolution
+  namespace: OutlookCalendar.Model
+  summary: "\nImplements the INotifyPropertyChanged interface and \nexposes a RaisePropertyChanged method for derived \nclasses to raise the PropertyChange event.  The event \narguments created by this class are cached to prevent \nmanaged heap fragmentation.\n"
+  example: []
+  syntax:
+    content: >-
+      [Serializable]
+
+      public abstract class BindableObject : INotifyPropertyChanged
+    content.vb: >-
+      <Serializable>
+
+      Public MustInherit Class BindableObject
+          Implements INotifyPropertyChanged
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - OutlookCalendar.Model.Appointment
+  implements:
+  - System.ComponentModel.INotifyPropertyChanged
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+- uid: OutlookCalendar.Model.BindableObject.#ctor
+  commentId: M:OutlookCalendar.Model.BindableObject.#ctor
+  id: '#ctor'
+  parent: OutlookCalendar.Model.BindableObject
+  langs:
+  - csharp
+  - vb
+  name: BindableObject()
+  nameWithType: BindableObject.BindableObject()
+  fullName: OutlookCalendar.Model.BindableObject.BindableObject()
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\Users\Natem\source\repos\Health-Project-master\Model\BindableObject.cs
+    startLine: 38
+  assemblies:
+  - CalendarSolution
+  namespace: OutlookCalendar.Model
+  syntax:
+    content: protected BindableObject()
+    content.vb: Protected Sub New
+  overload: OutlookCalendar.Model.BindableObject.#ctor*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: OutlookCalendar.Model.BindableObject.PropertyChanged
+  commentId: E:OutlookCalendar.Model.BindableObject.PropertyChanged
+  id: PropertyChanged
+  parent: OutlookCalendar.Model.BindableObject
+  langs:
+  - csharp
+  - vb
+  name: PropertyChanged
+  nameWithType: BindableObject.PropertyChanged
+  fullName: OutlookCalendar.Model.BindableObject.PropertyChanged
+  type: Event
+  source:
+    id: PropertyChanged
+    path: C:\Users\Natem\source\repos\Health-Project-master\Model\BindableObject.cs
+    startLine: 50
+  assemblies:
+  - CalendarSolution
+  namespace: OutlookCalendar.Model
+  summary: "\nRaised when a public property of this object is set.\n"
+  example: []
+  syntax:
+    content: public event PropertyChangedEventHandler PropertyChanged
+    return:
+      type: System.ComponentModel.PropertyChangedEventHandler
+    content.vb: Public Event PropertyChanged As PropertyChangedEventHandler
+  implements:
+  - System.ComponentModel.INotifyPropertyChanged.PropertyChanged
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: OutlookCalendar.Model.BindableObject.GetPropertyChangedEventArgs(System.String)
+  commentId: M:OutlookCalendar.Model.BindableObject.GetPropertyChangedEventArgs(System.String)
+  id: GetPropertyChangedEventArgs(System.String)
+  parent: OutlookCalendar.Model.BindableObject
+  langs:
+  - csharp
+  - vb
+  name: GetPropertyChangedEventArgs(String)
+  nameWithType: BindableObject.GetPropertyChangedEventArgs(String)
+  fullName: OutlookCalendar.Model.BindableObject.GetPropertyChangedEventArgs(System.String)
+  type: Method
+  source:
+    id: GetPropertyChangedEventArgs
+    path: C:\Users\Natem\source\repos\Health-Project-master\Model\BindableObject.cs
+    startLine: 59
+  assemblies:
+  - CalendarSolution
+  namespace: OutlookCalendar.Model
+  summary: "\nReturns an instance of PropertyChangedEventArgs for \nthe specified property name.\n"
+  example: []
+  syntax:
+    content: public static PropertyChangedEventArgs GetPropertyChangedEventArgs(string propertyName)
+    parameters:
+    - id: propertyName
+      type: System.String
+      description: "\nThe name of the property to create event args for.\n"
+    return:
+      type: System.ComponentModel.PropertyChangedEventArgs
+    content.vb: Public Shared Function GetPropertyChangedEventArgs(propertyName As String) As PropertyChangedEventArgs
+  overload: OutlookCalendar.Model.BindableObject.GetPropertyChangedEventArgs*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: OutlookCalendar.Model.BindableObject.AfterPropertyChanged(System.String)
+  commentId: M:OutlookCalendar.Model.BindableObject.AfterPropertyChanged(System.String)
+  id: AfterPropertyChanged(System.String)
+  parent: OutlookCalendar.Model.BindableObject
+  langs:
+  - csharp
+  - vb
+  name: AfterPropertyChanged(String)
+  nameWithType: BindableObject.AfterPropertyChanged(String)
+  fullName: OutlookCalendar.Model.BindableObject.AfterPropertyChanged(System.String)
+  type: Method
+  source:
+    id: AfterPropertyChanged
+    path: C:\Users\Natem\source\repos\Health-Project-master\Model\BindableObject.cs
+    startLine: 90
+  assemblies:
+  - CalendarSolution
+  namespace: OutlookCalendar.Model
+  summary: "\nDerived classes can override this method to\nexecute logic after a property is set. The \nbase implementation does nothing.\n"
+  example: []
+  syntax:
+    content: protected virtual void AfterPropertyChanged(string propertyName)
+    parameters:
+    - id: propertyName
+      type: System.String
+      description: "\nThe property which was changed.\n"
+    content.vb: Protected Overridable Sub AfterPropertyChanged(propertyName As String)
+  overload: OutlookCalendar.Model.BindableObject.AfterPropertyChanged*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: OutlookCalendar.Model.BindableObject.RaisePropertyChanged(System.String)
+  commentId: M:OutlookCalendar.Model.BindableObject.RaisePropertyChanged(System.String)
+  id: RaisePropertyChanged(System.String)
+  parent: OutlookCalendar.Model.BindableObject
+  langs:
+  - csharp
+  - vb
+  name: RaisePropertyChanged(String)
+  nameWithType: BindableObject.RaisePropertyChanged(String)
+  fullName: OutlookCalendar.Model.BindableObject.RaisePropertyChanged(System.String)
+  type: Method
+  source:
+    id: RaisePropertyChanged
+    path: C:\Users\Natem\source\repos\Health-Project-master\Model\BindableObject.cs
+    startLine: 102
+  assemblies:
+  - CalendarSolution
+  namespace: OutlookCalendar.Model
+  summary: "\nAttempts to raise the PropertyChanged event, and \ninvokes the virtual AfterPropertyChanged method, \nregardless of whether the event was raised or not.\n"
+  example: []
+  syntax:
+    content: protected void RaisePropertyChanged(string propertyName)
+    parameters:
+    - id: propertyName
+      type: System.String
+      description: "\nThe property which was changed.\n"
+    content.vb: Protected Sub RaisePropertyChanged(propertyName As String)
+  overload: OutlookCalendar.Model.BindableObject.RaisePropertyChanged*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+references:
+- uid: OutlookCalendar.Model
+  commentId: N:OutlookCalendar.Model
+  name: OutlookCalendar.Model
+  nameWithType: OutlookCalendar.Model
+  fullName: OutlookCalendar.Model
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.ComponentModel.INotifyPropertyChanged
+  commentId: T:System.ComponentModel.INotifyPropertyChanged
+  parent: System.ComponentModel
+  isExternal: true
+  name: INotifyPropertyChanged
+  nameWithType: INotifyPropertyChanged
+  fullName: System.ComponentModel.INotifyPropertyChanged
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.ComponentModel
+  commentId: N:System.ComponentModel
+  isExternal: true
+  name: System.ComponentModel
+  nameWithType: System.ComponentModel
+  fullName: System.ComponentModel
+- uid: OutlookCalendar.Model.BindableObject.#ctor*
+  commentId: Overload:OutlookCalendar.Model.BindableObject.#ctor
+  name: BindableObject
+  nameWithType: BindableObject.BindableObject
+  fullName: OutlookCalendar.Model.BindableObject.BindableObject
+- uid: System.ComponentModel.INotifyPropertyChanged.PropertyChanged
+  commentId: E:System.ComponentModel.INotifyPropertyChanged.PropertyChanged
+  parent: System.ComponentModel.INotifyPropertyChanged
+  isExternal: true
+  name: PropertyChanged
+  nameWithType: INotifyPropertyChanged.PropertyChanged
+  fullName: System.ComponentModel.INotifyPropertyChanged.PropertyChanged
+- uid: System.ComponentModel.PropertyChangedEventHandler
+  commentId: T:System.ComponentModel.PropertyChangedEventHandler
+  parent: System.ComponentModel
+  isExternal: true
+  name: PropertyChangedEventHandler
+  nameWithType: PropertyChangedEventHandler
+  fullName: System.ComponentModel.PropertyChangedEventHandler
+- uid: OutlookCalendar.Model.BindableObject.GetPropertyChangedEventArgs*
+  commentId: Overload:OutlookCalendar.Model.BindableObject.GetPropertyChangedEventArgs
+  name: GetPropertyChangedEventArgs
+  nameWithType: BindableObject.GetPropertyChangedEventArgs
+  fullName: OutlookCalendar.Model.BindableObject.GetPropertyChangedEventArgs
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.ComponentModel.PropertyChangedEventArgs
+  commentId: T:System.ComponentModel.PropertyChangedEventArgs
+  parent: System.ComponentModel
+  isExternal: true
+  name: PropertyChangedEventArgs
+  nameWithType: PropertyChangedEventArgs
+  fullName: System.ComponentModel.PropertyChangedEventArgs
+- uid: OutlookCalendar.Model.BindableObject.AfterPropertyChanged*
+  commentId: Overload:OutlookCalendar.Model.BindableObject.AfterPropertyChanged
+  name: AfterPropertyChanged
+  nameWithType: BindableObject.AfterPropertyChanged
+  fullName: OutlookCalendar.Model.BindableObject.AfterPropertyChanged
+- uid: OutlookCalendar.Model.BindableObject.RaisePropertyChanged*
+  commentId: Overload:OutlookCalendar.Model.BindableObject.RaisePropertyChanged
+  name: RaisePropertyChanged
+  nameWithType: BindableObject.RaisePropertyChanged
+  fullName: OutlookCalendar.Model.BindableObject.RaisePropertyChanged

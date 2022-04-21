@@ -9,7 +9,9 @@ items:
   - CalendarSolution.Records.#ctor(System.String,System.String,CalendarSolution.PatientAll)
   - CalendarSolution.Records.cbItems
   - CalendarSolution.Records.createCombo
+  - CalendarSolution.Records.Delete(System.Object,System.Windows.RoutedEventArgs)
   - CalendarSolution.Records.displayRecords(System.String,CalendarSolution.PatientAll)
+  - CalendarSolution.Records.Open_Image(System.Object,System.Windows.RoutedEventArgs)
   - CalendarSolution.Records.SelectedcbItem
   - CalendarSolution.Records.selectedVital
   - CalendarSolution.Records.vitalCB
@@ -876,7 +878,7 @@ items:
   source:
     id: .ctor
     path: C:\Users\Natem\source\repos\Health-Project-master\Records.xaml.cs
-    startLine: 32
+    startLine: 33
   assemblies:
   - CalendarSolution
   namespace: CalendarSolution
@@ -904,23 +906,23 @@ items:
   source:
     id: .ctor
     path: C:\Users\Natem\source\repos\Health-Project-master\Records.xaml.cs
-    startLine: 41
+    startLine: 42
   assemblies:
   - CalendarSolution
   namespace: CalendarSolution
   summary: "\n**Records** class used to create a seperate window for showing records\n"
   example: []
   syntax:
-    content: public Records(string Username, string Path, PatientAll fullData)
+    content: public Records(string username, string Path, PatientAll fullData)
     parameters:
-    - id: Username
+    - id: username
       type: System.String
     - id: Path
       type: System.String
     - id: fullData
       type: CalendarSolution.PatientAll
       description: ''
-    content.vb: Public Sub New(Username As String, Path As String, fullData As PatientAll)
+    content.vb: Public Sub New(username As String, Path As String, fullData As PatientAll)
   overload: CalendarSolution.Records.#ctor*
   modifiers.csharp:
   - public
@@ -940,7 +942,7 @@ items:
   source:
     id: displayRecords
     path: C:\Users\Natem\source\repos\Health-Project-master\Records.xaml.cs
-    startLine: 51
+    startLine: 53
   assemblies:
   - CalendarSolution
   namespace: CalendarSolution
@@ -953,6 +955,68 @@ items:
       type: CalendarSolution.PatientAll
     content.vb: Protected Sub displayRecords(Username As String, fullData As PatientAll)
   overload: CalendarSolution.Records.displayRecords*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: CalendarSolution.Records.Open_Image(System.Object,System.Windows.RoutedEventArgs)
+  commentId: M:CalendarSolution.Records.Open_Image(System.Object,System.Windows.RoutedEventArgs)
+  id: Open_Image(System.Object,System.Windows.RoutedEventArgs)
+  parent: CalendarSolution.Records
+  langs:
+  - csharp
+  - vb
+  name: Open_Image(Object, RoutedEventArgs)
+  nameWithType: Records.Open_Image(Object, RoutedEventArgs)
+  fullName: CalendarSolution.Records.Open_Image(System.Object, System.Windows.RoutedEventArgs)
+  type: Method
+  source:
+    id: Open_Image
+    path: C:\Users\Natem\source\repos\Health-Project-master\Records.xaml.cs
+    startLine: 58
+  assemblies:
+  - CalendarSolution
+  namespace: CalendarSolution
+  syntax:
+    content: protected void Open_Image(object sender, RoutedEventArgs e)
+    parameters:
+    - id: sender
+      type: System.Object
+    - id: e
+      type: System.Windows.RoutedEventArgs
+    content.vb: Protected Sub Open_Image(sender As Object, e As RoutedEventArgs)
+  overload: CalendarSolution.Records.Open_Image*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: CalendarSolution.Records.Delete(System.Object,System.Windows.RoutedEventArgs)
+  commentId: M:CalendarSolution.Records.Delete(System.Object,System.Windows.RoutedEventArgs)
+  id: Delete(System.Object,System.Windows.RoutedEventArgs)
+  parent: CalendarSolution.Records
+  langs:
+  - csharp
+  - vb
+  name: Delete(Object, RoutedEventArgs)
+  nameWithType: Records.Delete(Object, RoutedEventArgs)
+  fullName: CalendarSolution.Records.Delete(System.Object, System.Windows.RoutedEventArgs)
+  type: Method
+  source:
+    id: Delete
+    path: C:\Users\Natem\source\repos\Health-Project-master\Records.xaml.cs
+    startLine: 63
+  assemblies:
+  - CalendarSolution
+  namespace: CalendarSolution
+  syntax:
+    content: protected void Delete(object sender, RoutedEventArgs e)
+    parameters:
+    - id: sender
+      type: System.Object
+    - id: e
+      type: System.Windows.RoutedEventArgs
+    content.vb: Protected Sub Delete(sender As Object, e As RoutedEventArgs)
+  overload: CalendarSolution.Records.Delete*
   modifiers.csharp:
   - protected
   modifiers.vb:
@@ -971,7 +1035,7 @@ items:
   source:
     id: createCombo
     path: C:\Users\Natem\source\repos\Health-Project-master\Records.xaml.cs
-    startLine: 60
+    startLine: 71
   assemblies:
   - CalendarSolution
   namespace: CalendarSolution
@@ -13908,6 +13972,23 @@ references:
   name: displayRecords
   nameWithType: Records.displayRecords
   fullName: CalendarSolution.Records.displayRecords
+- uid: CalendarSolution.Records.Open_Image*
+  commentId: Overload:CalendarSolution.Records.Open_Image
+  name: Open_Image
+  nameWithType: Records.Open_Image
+  fullName: CalendarSolution.Records.Open_Image
+- uid: System.Windows.RoutedEventArgs
+  commentId: T:System.Windows.RoutedEventArgs
+  parent: System.Windows
+  isExternal: true
+  name: RoutedEventArgs
+  nameWithType: RoutedEventArgs
+  fullName: System.Windows.RoutedEventArgs
+- uid: CalendarSolution.Records.Delete*
+  commentId: Overload:CalendarSolution.Records.Delete
+  name: Delete
+  nameWithType: Records.Delete
+  fullName: CalendarSolution.Records.Delete
 - uid: CalendarSolution.Records.createCombo*
   commentId: Overload:CalendarSolution.Records.createCombo
   name: createCombo

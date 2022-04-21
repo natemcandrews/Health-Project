@@ -2,8 +2,12 @@
 - uid: CalendarSolution
   name: CalendarSolution
   items:
+  - uid: CalendarSolution.AddAppointmentWindow
+    name: AddAppointmentWindow
   - uid: CalendarSolution.App
     name: App
+  - uid: CalendarSolution.AppointmentWindow
+    name: AppointmentWindow
   - uid: CalendarSolution.Demograpic
     name: Demograpic
   - uid: CalendarSolution.FullPatientFile
@@ -44,3 +48,31 @@
     name: UserCreate
   - uid: CalendarSolution.VitalsPage
     name: VitalsPage
+- uid: OutlookCalendar.Controls
+  name: OutlookCalendar.Controls
+  items:
+  - uid: OutlookCalendar.Controls.Calendar
+    name: Calendar
+  - uid: OutlookCalendar.Controls.CalendarAppointmentItem
+    name: CalendarAppointmentItem
+  - uid: OutlookCalendar.Controls.CalendarDay
+    name: CalendarDay
+  - uid: OutlookCalendar.Controls.CalendarLedger
+    name: CalendarLedger
+  - uid: OutlookCalendar.Controls.CalendarLedgerItem
+    name: CalendarLedgerItem
+  - uid: OutlookCalendar.Controls.CalendarTimeslotItem
+    name: CalendarTimeslotItem
+  - uid: OutlookCalendar.Controls.Filters
+    name: Filters
+  - uid: OutlookCalendar.Controls.TimeslotPanel
+    name: TimeslotPanel
+- uid: OutlookCalendar.Model
+  name: OutlookCalendar.Model
+  items:
+  - uid: OutlookCalendar.Model.Appointment
+    name: Appointment
+  - uid: OutlookCalendar.Model.Appointments
+    name: Appointments
+  - uid: OutlookCalendar.Model.BindableObject
+    name: BindableObject

@@ -4,8 +4,12 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CalendarSolution"
+        xmlns:controls="clr-namespace:OutlookCalendar.Controls"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
+
+    <Window.Resources>
+    </Window.Resources>
     <Grid>
 
         <Grid.RowDefinitions>
@@ -15,31 +19,22 @@
         </Grid.RowDefinitions>
 
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="500"/>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="Auto"/>
         </Grid.ColumnDefinitions>
 
-        <StackPanel>
-            <Viewbox>
-                <Calendar x:Name="MyCalendar" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
-                    <Calendar.CalendarDayButtonStyle>
-                        <Style TargetType="CalendarDayButton">
-                            <Style.Triggers>
-                                <DataTrigger Binding="{Binding Date, Mode=TwoWay}" Value="12/25/2020">
-                                </DataTrigger>
-                            </Style.Triggers>
-                        </Style>
-                    </Calendar.CalendarDayButtonStyle>
-                </Calendar>
-            </Viewbox>
-        </StackPanel>
+        <Viewbox>
+            <Calendar x:Name="cldMain" SelectionMode="SingleDate"></Calendar>
+        </Viewbox>
         <StackPanel Grid.Column = "1" Width="200">
             <Label x:Name="textValue" Margin="2" Height="Auto" Content="_Enter Patient Name:"/>
             <TextBox x:Name="nameText" Margin="2, 0, 0, 30" Height="26.5" VerticalContentAlignment="Center"
                      Text="{Binding Name, Mode=TwoWay}"/>
             <Button Content="_Open Patient Form" Click="NewDatabase" Margin="2, 15"/>
+            <Button Content="Switch to Hospital View" Click="ToggleHospital" Margin="2,15"/>
 
+            <Button ContentStringFormat="Open Scheduler for: {0:MMMM dd, yyyy}" Content="{Binding SelectedDate, ElementName=cldMain, Mode=OneWay}"  Margin="2,15" Height="20" Click="newSchedule"/>
         </StackPanel>
     </Grid>
 </Window>

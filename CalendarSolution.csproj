@@ -407,6 +407,21 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="AddAppointmentWindow.xaml.cs">
+      <DependentUpon>AddAppointmentWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AppointmentWindow.xaml.cs">
+      <DependentUpon>AppointmentWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Calendar.cs" />
+    <Compile Include="Controls\CalendarAppointmentItem.cs" />
+    <Compile Include="Controls\CalendarDay.cs" />
+    <Compile Include="Controls\CalendarLedger.cs" />
+    <Compile Include="Controls\CalendarLedgerItem.cs" />
+    <Compile Include="Controls\CalendarTimeslotItem.cs" />
+    <Compile Include="Controls\DateProperty.cs" />
+    <Compile Include="Controls\Filters.cs" />
+    <Compile Include="Controls\TimeslotPanel.cs" />
     <Compile Include="Demograpic.xaml.cs">
       <DependentUpon>Demograpic.xaml</DependentUpon>
     </Compile>
@@ -437,6 +452,9 @@
     <Compile Include="medHistory.xaml.cs">
       <DependentUpon>medHistory.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Model\Appointment.cs" />
+    <Compile Include="Model\Appointments.cs" />
+    <Compile Include="Model\BindableObject.cs" />
     <Compile Include="PatientAll.cs" />
     <Compile Include="PatientDataBase.xaml.cs">
       <DependentUpon>PatientDataBase.xaml</DependentUpon>
@@ -454,6 +472,14 @@
     <Compile Include="VitalsPage.xaml.cs">
       <DependentUpon>VitalsPage.xaml</DependentUpon>
     </Compile>
+    <Page Include="AddAppointmentWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AppointmentWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Demograpic.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -514,6 +540,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Themes\Generic.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="Urinalysis.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -546,6 +576,7 @@
     <None Include="articles\toc.md" />
     <None Include="docfx.json" />
     <None Include="index.md" />
+    <None Include="Model\Model.cd" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -559,6 +590,10 @@
   <ItemGroup>
     <Analyzer Include="packages\Microsoft.CodeAnalysis.Analyzers.3.0.0\analyzers\dotnet\cs\Microsoft.CodeAnalysis.Analyzers.dll" />
     <Analyzer Include="packages\Microsoft.CodeAnalysis.Analyzers.3.0.0\analyzers\dotnet\cs\Microsoft.CodeAnalysis.CSharp.Analyzers.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Next.png" />
+    <Resource Include="Images\Previous.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

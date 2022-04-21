@@ -4,7 +4,9 @@ items:
   commentId: N:CalendarSolution
   id: CalendarSolution
   children:
+  - CalendarSolution.AddAppointmentWindow
   - CalendarSolution.App
+  - CalendarSolution.AppointmentWindow
   - CalendarSolution.Demograpic
   - CalendarSolution.FullPatientFile
   - CalendarSolution.graphVital
@@ -35,6 +37,16 @@ items:
   assemblies:
   - CalendarSolution
 references:
+- uid: CalendarSolution.AddAppointmentWindow
+  commentId: T:CalendarSolution.AddAppointmentWindow
+  name: AddAppointmentWindow
+  nameWithType: AddAppointmentWindow
+  fullName: CalendarSolution.AddAppointmentWindow
+- uid: CalendarSolution.AppointmentWindow
+  commentId: T:CalendarSolution.AppointmentWindow
+  name: AppointmentWindow
+  nameWithType: AppointmentWindow
+  fullName: CalendarSolution.AppointmentWindow
 - uid: CalendarSolution.Demograpic
   commentId: T:CalendarSolution.Demograpic
   name: Demograpic

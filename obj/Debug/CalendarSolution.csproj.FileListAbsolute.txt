@@ -1550,3 +1550,9 @@ C:\Users\Natem\Source\Repos\Health-Project\obj\Debug\CalendarSolution.csproj.Gen
 C:\Users\Natem\Source\Repos\Health-Project\obj\Debug\CalendarSolution.csproj.CoreCompileInputs.cache
 C:\Users\Natem\Source\Repos\Health-Project\obj\Debug\CalendarSolution.csproj.CopyComplete
 C:\Users\Natem\Source\Repos\Health-Project\obj\Debug\CalendarSolution.pdb
+C:\Users\Natem\source\repos\Health-Project-master\obj\Debug\AddAppointmentWindow.g.cs
+C:\Users\Natem\source\repos\Health-Project-master\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Natem\source\repos\Health-Project-master\obj\Debug\AddAppointmentWindow.baml
+C:\Users\Natem\source\repos\Health-Project-master\obj\Debug\Themes\Generic.baml
+C:\Users\Natem\source\repos\Health-Project-master\obj\Debug\AppointmentWindow.g.cs
+C:\Users\Natem\source\repos\Health-Project-master\obj\Debug\AppointmentWindow.baml

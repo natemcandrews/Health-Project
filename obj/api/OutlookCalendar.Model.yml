@@ -1,0 +1,40 @@
+### YamlMime:ManagedReference
+items:
+- uid: OutlookCalendar.Model
+  commentId: N:OutlookCalendar.Model
+  id: OutlookCalendar.Model
+  children:
+  - OutlookCalendar.Model.Appointment
+  - OutlookCalendar.Model.Appointments
+  - OutlookCalendar.Model.BindableObject
+  langs:
+  - csharp
+  - vb
+  name: OutlookCalendar.Model
+  nameWithType: OutlookCalendar.Model
+  fullName: OutlookCalendar.Model
+  type: Namespace
+  assemblies:
+  - CalendarSolution
+references:
+- uid: OutlookCalendar.Model.Appointment
+  commentId: T:OutlookCalendar.Model.Appointment
+  name: Appointment
+  nameWithType: Appointment
+  fullName: OutlookCalendar.Model.Appointment
+- uid: OutlookCalendar.Model.Appointments
+  commentId: T:OutlookCalendar.Model.Appointments
+  name: Appointments
+  nameWithType: Appointments
+  fullName: OutlookCalendar.Model.Appointments
+- uid: OutlookCalendar.Model.BindableObject
+  commentId: T:OutlookCalendar.Model.BindableObject
+  parent: OutlookCalendar.Model
+  name: BindableObject
+  nameWithType: BindableObject
+  fullName: OutlookCalendar.Model.BindableObject
+- uid: OutlookCalendar.Model
+  commentId: N:OutlookCalendar.Model
+  name: OutlookCalendar.Model
+  nameWithType: OutlookCalendar.Model
+  fullName: OutlookCalendar.Model
