@@ -28,8 +28,17 @@ namespace CalendarSolution
         {
             InitializeComponent();
             this.DataContext = users; //Initializes all form and its data
+
+            appointmentFolder();
         }
 
+        void appointmentFolder()
+        {
+            if (!Directory.Exists("C:/Patient Forms/Appointments"))
+            {
+                Directory.CreateDirectory((System.IO.Path.GetPathRoot(Environment.SystemDirectory) + "/Patient Forms/Appointments"));
+            }
+        }
 
         /// <summary>
         /// This method is bound to the button that logs in the user
@@ -84,9 +93,6 @@ namespace CalendarSolution
             {
                 Directory.CreateDirectory(path); //Creates necessary folders for the User
                 MessageBox.Show("New User Created");
-                Directory.CreateDirectory(path);
-                Directory.CreateDirectory(path);
-                Directory.CreateDirectory(path);
                 Directory.CreateDirectory(path);
                 MainWindow main = new MainWindow(users.Username, path); //Displays the main form
                 main.Show();

@@ -70,18 +70,21 @@ namespace CalendarSolution
 
         protected void newSchedule(object sender, RoutedEventArgs e)
         {
+            
             Button temp = (Button)sender;
             try
             {
                 DateTime theDate = (DateTime)temp.Content;
                 DateProperty.ScheduleDate = theDate;
                 AppointmentWindow schedule = new AppointmentWindow();
+                AppointmentLoader.firstRun = true;
                 schedule.Show();
-            } catch (NullReferenceException)
+            }
+            catch (NullReferenceException)
             {
                 MessageBox.Show("Please select a date first");
             }
-            
+
         }
     }
 }

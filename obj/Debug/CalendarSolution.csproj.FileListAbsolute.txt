@@ -1556,3 +1556,4 @@ C:\Users\Natem\source\repos\Health-Project-master\obj\Debug\AddAppointmentWindow
 C:\Users\Natem\source\repos\Health-Project-master\obj\Debug\Themes\Generic.baml
 C:\Users\Natem\source\repos\Health-Project-master\obj\Debug\AppointmentWindow.g.cs
 C:\Users\Natem\source\repos\Health-Project-master\obj\Debug\AppointmentWindow.baml
+C:\Users\Natem\source\repos\Health-Project-master\obj\Debug\CalendarSolution.csproj.SuggestedBindingRedirects.cache

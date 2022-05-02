@@ -16,7 +16,7 @@ items:
   source:
     id: Appointments
     path: C:\Users\Natem\source\repos\Health-Project-master\Model\Appointments.cs
-    startLine: 8
+    startLine: 11
   assemblies:
   - CalendarSolution
   namespace: OutlookCalendar.Model
@@ -111,7 +111,7 @@ items:
   source:
     id: .ctor
     path: C:\Users\Natem\source\repos\Health-Project-master\Model\Appointments.cs
-    startLine: 10
+    startLine: 14
   assemblies:
   - CalendarSolution
   namespace: OutlookCalendar.Model

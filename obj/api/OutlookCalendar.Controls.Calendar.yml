@@ -5,6 +5,7 @@ items:
   id: Calendar
   parent: OutlookCalendar.Controls
   children:
+  - OutlookCalendar.Controls.Calendar.#ctor
   - OutlookCalendar.Controls.Calendar.AddAppointment
   - OutlookCalendar.Controls.Calendar.AddAppointmentEvent
   - OutlookCalendar.Controls.Calendar.Appointments
@@ -29,7 +30,7 @@ items:
   source:
     id: Calendar
     path: C:\Users\Natem\source\repos\Health-Project-master\Controls\Calendar.cs
-    startLine: 18
+    startLine: 21
   assemblies:
   - CalendarSolution
   namespace: OutlookCalendar.Controls
@@ -665,6 +666,32 @@ items:
   modifiers.vb:
   - Public
   - Class
+- uid: OutlookCalendar.Controls.Calendar.#ctor
+  commentId: M:OutlookCalendar.Controls.Calendar.#ctor
+  id: '#ctor'
+  parent: OutlookCalendar.Controls.Calendar
+  langs:
+  - csharp
+  - vb
+  name: Calendar()
+  nameWithType: Calendar.Calendar()
+  fullName: OutlookCalendar.Controls.Calendar.Calendar()
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\Users\Natem\source\repos\Health-Project-master\Controls\Calendar.cs
+    startLine: 32
+  assemblies:
+  - CalendarSolution
+  namespace: OutlookCalendar.Controls
+  syntax:
+    content: public Calendar()
+    content.vb: Public Sub New
+  overload: OutlookCalendar.Controls.Calendar.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
 - uid: OutlookCalendar.Controls.Calendar.AddAppointmentEvent
   commentId: F:OutlookCalendar.Controls.Calendar.AddAppointmentEvent
   id: AddAppointmentEvent
@@ -679,7 +706,7 @@ items:
   source:
     id: AddAppointmentEvent
     path: C:\Users\Natem\source\repos\Health-Project-master\Controls\Calendar.cs
-    startLine: 30
+    startLine: 51
   assemblies:
   - CalendarSolution
   namespace: OutlookCalendar.Controls
@@ -710,7 +737,7 @@ items:
   source:
     id: AddAppointment
     path: C:\Users\Natem\source\repos\Health-Project-master\Controls\Calendar.cs
-    startLine: 33
+    startLine: 54
   assemblies:
   - CalendarSolution
   namespace: OutlookCalendar.Controls
@@ -737,7 +764,7 @@ items:
   source:
     id: AppointmentsProperty
     path: C:\Users\Natem\source\repos\Health-Project-master\Controls\Calendar.cs
-    startLine: 49
+    startLine: 70
   assemblies:
   - CalendarSolution
   namespace: OutlookCalendar.Controls
@@ -768,7 +795,7 @@ items:
   source:
     id: Appointments
     path: C:\Users\Natem\source\repos\Health-Project-master\Controls\Calendar.cs
-    startLine: 53
+    startLine: 74
   assemblies:
   - CalendarSolution
   namespace: OutlookCalendar.Controls
@@ -799,7 +826,7 @@ items:
   source:
     id: OnAppointmentsChanged
     path: C:\Users\Natem\source\repos\Health-Project-master\Controls\Calendar.cs
-    startLine: 64
+    startLine: 85
   assemblies:
   - CalendarSolution
   namespace: OutlookCalendar.Controls
@@ -830,7 +857,7 @@ items:
   source:
     id: CurrentDateProperty
     path: C:\Users\Natem\source\repos\Health-Project-master\Controls\Calendar.cs
-    startLine: 76
+    startLine: 97
   assemblies:
   - CalendarSolution
   namespace: OutlookCalendar.Controls
@@ -863,7 +890,7 @@ items:
   source:
     id: CurrentDate
     path: C:\Users\Natem\source\repos\Health-Project-master\Controls\Calendar.cs
-    startLine: 85
+    startLine: 106
   assemblies:
   - CalendarSolution
   namespace: OutlookCalendar.Controls
@@ -896,7 +923,7 @@ items:
   source:
     id: OnCurrentDateChanged
     path: C:\Users\Natem\source\repos\Health-Project-master\Controls\Calendar.cs
-    startLine: 102
+    startLine: 124
   assemblies:
   - CalendarSolution
   namespace: OutlookCalendar.Controls
@@ -929,7 +956,7 @@ items:
   source:
     id: NextDay
     path: C:\Users\Natem\source\repos\Health-Project-master\Controls\Calendar.cs
-    startLine: 122
+    startLine: 145
   assemblies:
   - CalendarSolution
   namespace: OutlookCalendar.Controls
@@ -960,7 +987,7 @@ items:
   source:
     id: PreviousDay
     path: C:\Users\Natem\source\repos\Health-Project-master\Controls\Calendar.cs
-    startLine: 123
+    startLine: 146
   assemblies:
   - CalendarSolution
   namespace: OutlookCalendar.Controls
@@ -991,7 +1018,7 @@ items:
   source:
     id: OnCanExecuteNextDay
     path: C:\Users\Natem\source\repos\Health-Project-master\Controls\Calendar.cs
-    startLine: 135
+    startLine: 158
   assemblies:
   - CalendarSolution
   namespace: OutlookCalendar.Controls
@@ -1022,7 +1049,7 @@ items:
   source:
     id: OnExecutedNextDay
     path: C:\Users\Natem\source\repos\Health-Project-master\Controls\Calendar.cs
-    startLine: 141
+    startLine: 164
   assemblies:
   - CalendarSolution
   namespace: OutlookCalendar.Controls
@@ -1053,7 +1080,7 @@ items:
   source:
     id: OnCanExecutePreviousDay
     path: C:\Users\Natem\source\repos\Health-Project-master\Controls\Calendar.cs
-    startLine: 157
+    startLine: 180
   assemblies:
   - CalendarSolution
   namespace: OutlookCalendar.Controls
@@ -1084,7 +1111,7 @@ items:
   source:
     id: OnExecutedPreviousDay
     path: C:\Users\Natem\source\repos\Health-Project-master\Controls\Calendar.cs
-    startLine: 163
+    startLine: 186
   assemblies:
   - CalendarSolution
   namespace: OutlookCalendar.Controls
@@ -12544,6 +12571,11 @@ references:
   name: System.Windows.Markup
   nameWithType: System.Windows.Markup
   fullName: System.Windows.Markup
+- uid: OutlookCalendar.Controls.Calendar.#ctor*
+  commentId: Overload:OutlookCalendar.Controls.Calendar.#ctor
+  name: Calendar
+  nameWithType: Calendar.Calendar
+  fullName: OutlookCalendar.Controls.Calendar.Calendar
 - uid: System.Windows.RoutedEvent
   commentId: T:System.Windows.RoutedEvent
   parent: System.Windows

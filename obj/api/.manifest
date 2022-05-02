@@ -163,6 +163,7 @@
   "CalendarSolution.VitalsPage.#ctor(System.String,System.String,CalendarSolution.PatientAll)": "CalendarSolution.VitalsPage.yml",
   "OutlookCalendar.Controls": "OutlookCalendar.Controls.yml",
   "OutlookCalendar.Controls.Calendar": "OutlookCalendar.Controls.Calendar.yml",
+  "OutlookCalendar.Controls.Calendar.#ctor": "OutlookCalendar.Controls.Calendar.yml",
   "OutlookCalendar.Controls.Calendar.AddAppointment": "OutlookCalendar.Controls.Calendar.yml",
   "OutlookCalendar.Controls.Calendar.AddAppointmentEvent": "OutlookCalendar.Controls.Calendar.yml",
   "OutlookCalendar.Controls.Calendar.Appointments": "OutlookCalendar.Controls.Calendar.yml",

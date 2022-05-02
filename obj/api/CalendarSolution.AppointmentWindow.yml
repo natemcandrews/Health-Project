@@ -16,7 +16,7 @@ items:
   source:
     id: AppointmentWindow
     path: C:\Users\Natem\source\repos\Health-Project-master\AppointmentWindow.xaml.cs
-    startLine: 21
+    startLine: 23
   assemblies:
   - CalendarSolution
   namespace: CalendarSolution
@@ -747,7 +747,7 @@ items:
   source:
     id: .ctor
     path: C:\Users\Natem\source\repos\Health-Project-master\AppointmentWindow.xaml.cs
-    startLine: 25
+    startLine: 28
   assemblies:
   - CalendarSolution
   namespace: CalendarSolution

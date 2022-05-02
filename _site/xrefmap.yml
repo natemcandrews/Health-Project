@@ -1824,6 +1824,19 @@ references:
   commentId: T:OutlookCalendar.Controls.Calendar
   fullName: OutlookCalendar.Controls.Calendar
   nameWithType: Calendar
+- uid: OutlookCalendar.Controls.Calendar.#ctor
+  name: Calendar()
+  href: api/OutlookCalendar.Controls.Calendar.html#OutlookCalendar_Controls_Calendar__ctor
+  commentId: M:OutlookCalendar.Controls.Calendar.#ctor
+  fullName: OutlookCalendar.Controls.Calendar.Calendar()
+  nameWithType: Calendar.Calendar()
+- uid: OutlookCalendar.Controls.Calendar.#ctor*
+  name: Calendar
+  href: api/OutlookCalendar.Controls.Calendar.html#OutlookCalendar_Controls_Calendar__ctor_
+  commentId: Overload:OutlookCalendar.Controls.Calendar.#ctor
+  isSpec: "True"
+  fullName: OutlookCalendar.Controls.Calendar.Calendar
+  nameWithType: Calendar.Calendar
 - uid: OutlookCalendar.Controls.Calendar.AddAppointment
   name: AddAppointment
   href: api/OutlookCalendar.Controls.Calendar.html#OutlookCalendar_Controls_Calendar_AddAppointment

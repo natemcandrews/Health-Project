@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
+using System.Timers;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -11,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Xml.Serialization;
 using CalendarSolution.Controls;
 using OutlookCalendar.Model;
 
@@ -18,14 +21,30 @@ namespace OutlookCalendar.Controls
 {
     public class Calendar : Control
     {
-
-        //add timer for code: day.ItemsSource = Appointments.ByDate(byDate);
+        private static System.Timers.Timer aTimer;        
         static Calendar()
         {
             DefaultStyleKeyProperty.OverrideMetadata(typeof(Calendar), new FrameworkPropertyMetadata(typeof(Calendar)));
 
             CommandManager.RegisterClassCommandBinding(typeof(Calendar), new CommandBinding(NextDay, new ExecutedRoutedEventHandler(OnExecutedNextDay), new CanExecuteRoutedEventHandler(OnCanExecuteNextDay)));
             CommandManager.RegisterClassCommandBinding(typeof(Calendar), new CommandBinding(PreviousDay, new ExecutedRoutedEventHandler(OnExecutedPreviousDay), new CanExecuteRoutedEventHandler(OnCanExecutePreviousDay)));
+        }
+
+        public Calendar()
+        {
+            aTimer = new System.Timers.Timer(1000);
+            aTimer.Elapsed += Timer_Click;
+            aTimer.AutoReset = true;
+            aTimer.Enabled = true;
+        }
+        
+
+        private void Timer_Click(object sender, ElapsedEventArgs e)
+        {
+            this.Dispatcher.Invoke(() =>
+            {
+                FilterAppointments();
+            });
         }
 
         #region AddAppointment
@@ -78,7 +97,7 @@ namespace OutlookCalendar.Controls
         /// </summary>
         public static readonly DependencyProperty CurrentDateProperty =
             DependencyProperty.Register("CurrentDate", typeof(DateTime), typeof(Calendar),
-                new FrameworkPropertyMetadata((DateTime)DateTime.Now,
+                new FrameworkPropertyMetadata(DateProperty.ScheduleDate,
                     new PropertyChangedCallback(OnCurrentDateChanged)));
 
         /// <summary>
@@ -96,6 +115,7 @@ namespace OutlookCalendar.Controls
         /// </summary>
         private static void OnCurrentDateChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
         {
+            DateProperty.ScheduleDate = (DateTime)e.NewValue;
             ((Calendar)d).OnCurrentDateChanged(e);
         }
 
@@ -114,7 +134,8 @@ namespace OutlookCalendar.Controls
             DateTime byDate = CurrentDate;
             this.ApplyTemplate();
             CalendarDay day = this.GetTemplateChild("day") as CalendarDay;
-            day.ItemsSource = Appointments.ByDate(byDate);
+            day.ItemsSource = Appointments.ByDate(DateProperty.ScheduleDate);
+            DateProperty.ScheduleDate = CurrentDate;
 
             TextBlock dayHeader = this.GetTemplateChild("dayHeader") as TextBlock;
             dayHeader.Text = byDate.DayOfWeek.ToString();

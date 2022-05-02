@@ -413,6 +413,7 @@
     <Compile Include="AppointmentWindow.xaml.cs">
       <DependentUpon>AppointmentWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Controls\AppointmentLoader.cs" />
     <Compile Include="Controls\Calendar.cs" />
     <Compile Include="Controls\CalendarAppointmentItem.cs" />
     <Compile Include="Controls\CalendarDay.cs" />

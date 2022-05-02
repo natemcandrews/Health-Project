@@ -831,7 +831,7 @@ items:
   source:
     id: LoginUser
     path: C:\Users\Natem\source\repos\Health-Project-master\Login.xaml.cs
-    startLine: 38
+    startLine: 47
   assemblies:
   - CalendarSolution
   namespace: CalendarSolution
@@ -866,7 +866,7 @@ items:
   source:
     id: CreateNew
     path: C:\Users\Natem\source\repos\Health-Project-master\Login.xaml.cs
-    startLine: 69
+    startLine: 78
   assemblies:
   - CalendarSolution
   namespace: CalendarSolution
