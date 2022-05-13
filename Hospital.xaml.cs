@@ -89,6 +89,10 @@ namespace CalendarSolution
                 try
                 {
                     tempData = deserialize(path + "/" + patientName + "/PatientData/" + patientName + "_Data.json");
+                } catch(DirectoryNotFoundException ex)
+                {
+                    Console.WriteLine(ex.Message);
+                    break;
                 } catch(FileNotFoundException ex)
                 {
                     Console.WriteLine(ex.Message);

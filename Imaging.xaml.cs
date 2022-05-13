@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -26,6 +27,7 @@ namespace CalendarSolution
         string PatientName; //Stores the patients name in a string
         string Username; //Stores the Username of the user, primarily used to access proper storage files
         string path; //path to patient files
+        Process imageAccess;
         public ObservableCollection<ComboBoxItem> cbItems { get; set; } //The selectable options from the combo box
 
         /// <summary>
@@ -88,6 +90,11 @@ namespace CalendarSolution
             addCombo(true);
         }
 
+        public Process getProcess()
+        {
+            return imageAccess;
+        }
+
         /// <summary>
         /// Saves the image and description to the files
         /// </summary>
@@ -102,12 +109,26 @@ namespace CalendarSolution
         /// <param name="add"></param>
         private void addCombo(bool add)
         {
+            int count = 0;
+            int removeIndex = -1;
             foreach (ComboBoxItem combo in cbItems) //Loops through each combobo item
             {
-                if (string.IsNullOrEmpty(combo.Content.ToString()) && combo.Content.Equals(image.Title)) //Checks if another item already exists
-                {
-                    add = false;
+
+                try {
+                    if (string.IsNullOrEmpty(combo.Content.ToString()) && combo.Content.Equals(image.Title)) //Checks if another item already exists
+                    {
+                        add = false;
+                    }
+                } catch (NullReferenceException ex){
+                    ex.GetBaseException();
+                    removeIndex = count;
                 }
+                count++;
+            }
+
+            if(removeIndex > 0)
+            {
+                cbItems.RemoveAt(removeIndex);
             }
 
             if (add) //Adds new item

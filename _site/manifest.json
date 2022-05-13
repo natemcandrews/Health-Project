@@ -163,7 +163,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CalendarSolution.Imaging.html",
-          "hash": "tE73Tk2miPwTaDTyc4icnUYYUFrMegfw7ouPnDHRXgo="
+          "hash": "VDuGW9xAq60mFs/i+0jH6Htg78KhXsXCi5CIHlSCUk8="
         }
       },
       "is_incremental": true,
@@ -370,7 +370,7 @@
           "hash": "8FYuL7P7xJ1oEJ75SN7pAoOViwOLCP5Xi2aNtniwSOU="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -466,7 +466,7 @@
           "hash": "eNVFDBgGQ0WwQhEMGSKk7CXBkjM6yZ/7HPKZWOSW0pQ="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -561,7 +561,7 @@
           "can_incremental": true,
           "incrementalPhase": "build",
           "total_file_count": 37,
-          "skipped_file_count": 36
+          "skipped_file_count": 37
         },
         "ResourceDocumentProcessor": {
           "can_incremental": false,

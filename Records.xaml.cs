@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -63,10 +64,20 @@ namespace CalendarSolution
 
         protected void Delete(object sender, RoutedEventArgs e)
         {
-            Directory.Delete($"{path}/{PatientName}", true);
+            ListProcesses();
+            RecordFrame.Content = null; //How is image being used
             this.Close();
+            Directory.Delete($"{path}/{PatientName}", true);
         }
 
+        private void ListProcesses()
+        {
+            Process[] processCollection = Process.GetProcesses();
+            foreach (Process p in processCollection)
+            {
+                Console.WriteLine(p.ProcessName);
+            }
+        }
 
 
         public void createCombo()

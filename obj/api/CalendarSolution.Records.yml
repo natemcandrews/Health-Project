@@ -25,7 +25,7 @@ items:
   source:
     id: Records
     path: C:\Users\Natem\source\repos\Health-Project-master\Records.xaml.cs
-    startLine: 19
+    startLine: 20
   assemblies:
   - CalendarSolution
   namespace: CalendarSolution
@@ -754,7 +754,7 @@ items:
   source:
     id: cbItems
     path: C:\Users\Natem\source\repos\Health-Project-master\Records.xaml.cs
-    startLine: 22
+    startLine: 23
   assemblies:
   - CalendarSolution
   namespace: CalendarSolution
@@ -785,7 +785,7 @@ items:
   source:
     id: SelectedcbItem
     path: C:\Users\Natem\source\repos\Health-Project-master\Records.xaml.cs
-    startLine: 23
+    startLine: 24
   assemblies:
   - CalendarSolution
   namespace: CalendarSolution
@@ -816,7 +816,7 @@ items:
   source:
     id: vitalCB
     path: C:\Users\Natem\source\repos\Health-Project-master\Records.xaml.cs
-    startLine: 24
+    startLine: 25
   assemblies:
   - CalendarSolution
   namespace: CalendarSolution
@@ -847,7 +847,7 @@ items:
   source:
     id: selectedVital
     path: C:\Users\Natem\source\repos\Health-Project-master\Records.xaml.cs
-    startLine: 25
+    startLine: 26
   assemblies:
   - CalendarSolution
   namespace: CalendarSolution
@@ -878,7 +878,7 @@ items:
   source:
     id: .ctor
     path: C:\Users\Natem\source\repos\Health-Project-master\Records.xaml.cs
-    startLine: 33
+    startLine: 34
   assemblies:
   - CalendarSolution
   namespace: CalendarSolution
@@ -906,7 +906,7 @@ items:
   source:
     id: .ctor
     path: C:\Users\Natem\source\repos\Health-Project-master\Records.xaml.cs
-    startLine: 42
+    startLine: 43
   assemblies:
   - CalendarSolution
   namespace: CalendarSolution
@@ -942,7 +942,7 @@ items:
   source:
     id: displayRecords
     path: C:\Users\Natem\source\repos\Health-Project-master\Records.xaml.cs
-    startLine: 53
+    startLine: 54
   assemblies:
   - CalendarSolution
   namespace: CalendarSolution
@@ -973,7 +973,7 @@ items:
   source:
     id: Open_Image
     path: C:\Users\Natem\source\repos\Health-Project-master\Records.xaml.cs
-    startLine: 58
+    startLine: 59
   assemblies:
   - CalendarSolution
   namespace: CalendarSolution
@@ -1004,7 +1004,7 @@ items:
   source:
     id: Delete
     path: C:\Users\Natem\source\repos\Health-Project-master\Records.xaml.cs
-    startLine: 63
+    startLine: 64
   assemblies:
   - CalendarSolution
   namespace: CalendarSolution
@@ -1035,7 +1035,7 @@ items:
   source:
     id: createCombo
     path: C:\Users\Natem\source\repos\Health-Project-master\Records.xaml.cs
-    startLine: 71
+    startLine: 82
   assemblies:
   - CalendarSolution
   namespace: CalendarSolution

@@ -31,6 +31,7 @@
   "CalendarSolution.Imaging.#ctor(System.String,System.String,System.Collections.ObjectModel.ObservableCollection{System.Windows.Controls.ComboBoxItem},System.String)": "CalendarSolution.Imaging.yml",
   "CalendarSolution.Imaging.#ctor(System.String,System.String,System.String,System.Collections.ObjectModel.ObservableCollection{System.Windows.Controls.ComboBoxItem},System.String)": "CalendarSolution.Imaging.yml",
   "CalendarSolution.Imaging.cbItems": "CalendarSolution.Imaging.yml",
+  "CalendarSolution.Imaging.getProcess": "CalendarSolution.Imaging.yml",
   "CalendarSolution.Immune": "CalendarSolution.Immune.yml",
   "CalendarSolution.Immune.#ctor": "CalendarSolution.Immune.yml",
   "CalendarSolution.Immune.#ctor(CalendarSolution.PatientAll)": "CalendarSolution.Immune.yml",

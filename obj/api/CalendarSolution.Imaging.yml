@@ -9,6 +9,7 @@ items:
   - CalendarSolution.Imaging.#ctor(System.String,System.String,System.Collections.ObjectModel.ObservableCollection{System.Windows.Controls.ComboBoxItem},System.String)
   - CalendarSolution.Imaging.#ctor(System.String,System.String,System.String,System.Collections.ObjectModel.ObservableCollection{System.Windows.Controls.ComboBoxItem},System.String)
   - CalendarSolution.Imaging.cbItems
+  - CalendarSolution.Imaging.getProcess
   langs:
   - csharp
   - vb
@@ -19,7 +20,7 @@ items:
   source:
     id: Imaging
     path: C:\Users\Natem\source\repos\Health-Project-master\Imaging.xaml.cs
-    startLine: 22
+    startLine: 23
   assemblies:
   - CalendarSolution
   namespace: CalendarSolution
@@ -656,7 +657,7 @@ items:
   source:
     id: cbItems
     path: C:\Users\Natem\source\repos\Health-Project-master\Imaging.xaml.cs
-    startLine: 28
+    startLine: 30
   assemblies:
   - CalendarSolution
   namespace: CalendarSolution
@@ -687,7 +688,7 @@ items:
   source:
     id: .ctor
     path: C:\Users\Natem\source\repos\Health-Project-master\Imaging.xaml.cs
-    startLine: 33
+    startLine: 35
   assemblies:
   - CalendarSolution
   namespace: CalendarSolution
@@ -715,7 +716,7 @@ items:
   source:
     id: .ctor
     path: C:\Users\Natem\source\repos\Health-Project-master\Imaging.xaml.cs
-    startLine: 45
+    startLine: 47
   assemblies:
   - CalendarSolution
   namespace: CalendarSolution
@@ -759,7 +760,7 @@ items:
   source:
     id: .ctor
     path: C:\Users\Natem\source\repos\Health-Project-master\Imaging.xaml.cs
-    startLine: 64
+    startLine: 66
   assemblies:
   - CalendarSolution
   namespace: CalendarSolution
@@ -792,6 +793,34 @@ items:
   - Public
   fullName.vb: CalendarSolution.Imaging.Imaging(System.String, System.String, System.String, System.Collections.ObjectModel.ObservableCollection(Of System.Windows.Controls.ComboBoxItem), System.String)
   name.vb: Imaging(String, String, String, ObservableCollection(Of ComboBoxItem), String)
+- uid: CalendarSolution.Imaging.getProcess
+  commentId: M:CalendarSolution.Imaging.getProcess
+  id: getProcess
+  parent: CalendarSolution.Imaging
+  langs:
+  - csharp
+  - vb
+  name: getProcess()
+  nameWithType: Imaging.getProcess()
+  fullName: CalendarSolution.Imaging.getProcess()
+  type: Method
+  source:
+    id: getProcess
+    path: C:\Users\Natem\source\repos\Health-Project-master\Imaging.xaml.cs
+    startLine: 92
+  assemblies:
+  - CalendarSolution
+  namespace: CalendarSolution
+  syntax:
+    content: public Process getProcess()
+    return:
+      type: System.Diagnostics.Process
+    content.vb: Public Function getProcess As Process
+  overload: CalendarSolution.Imaging.getProcess*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
 references:
 - uid: CalendarSolution
   commentId: N:CalendarSolution
@@ -12254,3 +12283,21 @@ references:
   name: String
   nameWithType: String
   fullName: System.String
+- uid: CalendarSolution.Imaging.getProcess*
+  commentId: Overload:CalendarSolution.Imaging.getProcess
+  name: getProcess
+  nameWithType: Imaging.getProcess
+  fullName: CalendarSolution.Imaging.getProcess
+- uid: System.Diagnostics.Process
+  commentId: T:System.Diagnostics.Process
+  parent: System.Diagnostics
+  isExternal: true
+  name: Process
+  nameWithType: Process
+  fullName: System.Diagnostics.Process
+- uid: System.Diagnostics
+  commentId: N:System.Diagnostics
+  isExternal: true
+  name: System.Diagnostics
+  nameWithType: System.Diagnostics
+  fullName: System.Diagnostics

@@ -311,6 +311,19 @@ references:
   isSpec: "True"
   fullName: CalendarSolution.Imaging.cbItems
   nameWithType: Imaging.cbItems
+- uid: CalendarSolution.Imaging.getProcess
+  name: getProcess()
+  href: api/CalendarSolution.Imaging.html#CalendarSolution_Imaging_getProcess
+  commentId: M:CalendarSolution.Imaging.getProcess
+  fullName: CalendarSolution.Imaging.getProcess()
+  nameWithType: Imaging.getProcess()
+- uid: CalendarSolution.Imaging.getProcess*
+  name: getProcess
+  href: api/CalendarSolution.Imaging.html#CalendarSolution_Imaging_getProcess_
+  commentId: Overload:CalendarSolution.Imaging.getProcess
+  isSpec: "True"
+  fullName: CalendarSolution.Imaging.getProcess
+  nameWithType: Imaging.getProcess
 - uid: CalendarSolution.Immune
   name: Immune
   href: api/CalendarSolution.Immune.html

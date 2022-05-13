@@ -872,7 +872,7 @@ items:
   source:
     id: makeLabel
     path: C:\Users\Natem\source\repos\Health-Project-master\Hospital.xaml.cs
-    startLine: 144
+    startLine: 148
   assemblies:
   - CalendarSolution
   namespace: CalendarSolution
@@ -900,7 +900,7 @@ items:
   source:
     id: ToggleClinic
     path: C:\Users\Natem\source\repos\Health-Project-master\Hospital.xaml.cs
-    startLine: 206
+    startLine: 210
   assemblies:
   - CalendarSolution
   namespace: CalendarSolution

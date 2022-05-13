@@ -102,6 +102,10 @@ namespace OutlookCalendar.Controls
 
                 width = finalSize.Width;
                 height = (end_offset - start_offset)-2;
+                if(height < 2)
+                {
+                    height = 0;
+                }
 
                 element.Arrange(new Rect(left, top, width, height));
             }
